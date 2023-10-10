@@ -31,6 +31,7 @@ color: black;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
             height: 12rem;
             width: 19rem;
+            cursor: pointer;
         .img{
             height: 12rem;
             width: 19rem;
@@ -58,6 +59,17 @@ color: black;
         font-weight : 600;
         text-align : center;
         font-size: 1.3rem;
+        border: 2px black solid;
+        background-color: black;
+        color: white;
+        width: max-content;
+        padding: 1.2rem 2rem;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .seeAllLocations:hover{
+        background-color : white;
+        color: black;
     }
 }
 
@@ -101,28 +113,41 @@ const TrendingLocations = () => {
             <div style={{display:'flex' , width:'100%' , justifyContent:'center'}}>
             <div className='cities'>
                 <div className='box'>
+                <div className='image-box'>
                     <img alt='img' className='img' src='https://media.timeout.com/images/105242423/750/422/image.jpg' />
+                   </div>
                     <p className='name'>Dubai</p>
                 </div>
 
                 <div className='box'>
+                <div className='image-box'>
                     <img alt='img' className='img' src='https://www.holidify.com/images/bgImages/UDAIPUR.jpg' />
+                   </div>
                     <p className='name'>Gurgaon</p>
                 </div>
 
                 <div className='box'>
+                <div className='image-box'>
                     <img alt='img' className='img' src='https://www.travelseewrite.com/wp-content/uploads/2021/10/The-beauty-of-Udaipur-is-best-enjoyed-at-night-City-Palace-and-Lake-Pichola.jpg' />
+                   </div>
                     <p className='name'>New Delhi</p>
                 </div>
                 <div className='box'>
+                    <div className='image-box'>
                     <img alt='img' className='img' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Fateh-Sagar-Lake.jpg' />
+                    </div>
                     <p className='name'>Goa</p>
                 </div>
 
             </div>
             </div>
+
+
+            <div style={{display:'flex' , justifyContent:'center' , width:'100%'}}>
             <p className='seeAllLocations'>See All Locations</p>
-        
+            </div>
+
+
         </div>
        
     </Wrapper>
@@ -130,3 +155,7 @@ const TrendingLocations = () => {
 }
 
 export default TrendingLocations
+
+
+
+

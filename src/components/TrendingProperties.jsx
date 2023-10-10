@@ -55,6 +55,17 @@ color: black;
         font-weight : 600;
         text-align : center;
         font-size: 1.3rem;
+        border: 2px black solid;
+        background-color: black;
+        color: white;
+        width: max-content;
+        padding: 1.2rem 2rem;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .seeAllLocations:hover{
+        background-color : white;
+        color: black;
     }
 }
 @media(max-width:1340px){
@@ -156,7 +167,13 @@ const TrendingProperties = () => {
 
              </div>
             </div>
+            
+            
+            <div style={{display:'flex' , justifyContent:'center' , width:'100%'}}>
             <p className='seeAllLocations'>See All Locations</p>
+            </div>
+
+
         </div>
        
     </Wrapper>

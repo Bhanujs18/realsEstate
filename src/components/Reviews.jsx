@@ -14,8 +14,9 @@ import MobileReviews from './MobileReviews';
 
 
 const Wrapper = styled.section`
-background-image: url('../imgs/grey.jpg');
+background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFOy5a26Jv-bscrfsfWSAFlaI2PFyYzDFvtg&usqp=CAU');
 background-size:cover;
+
 background-repeat: no-repeat;
 padding: 3rem 0rem;
 width:100%;
@@ -35,13 +36,13 @@ color: white;
   font-weight: bold;
   padding: 1rem;
   color: #000000;
-  border: 2px solid #dbba00;
+  // border: 2px solid #dbba00;
   background-color : #ffffff;
 }
 .testimonial{
   font-size: 2.5rem;
   text-align: center;
-  color: #dbba00;
+  color: white;
   margin:0rem;
 }
 
@@ -87,7 +88,7 @@ const Reviews = () => {
         slidesPerView={3}
         centeredSlides={true}
         loop={true}
-        spaceBetween={10}
+        spaceBetween={30}
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,

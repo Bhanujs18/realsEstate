@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 import {BiLogoGmail} from 'react-icons/bi';
-import { NavLink } from 'react-router-dom';
 import {BsWhatsapp} from 'react-icons/bs';
 import {BiPhoneCall} from 'react-icons/bi'
 
 const Wrapper = styled.section`
-background-image: url('https://media.istockphoto.com/id/1320306462/video/4k-abstract-luxury-black-grey-gradient-backgrounds-with-diagonal-golden-metallic-stripes.jpg?s=640x640&k=20&c=zwBGZfYlbYVMNcnJirViOlEOFHLkPJeg9z-HvfLr77Y=');
+ background-image: url('https://media.istockphoto.com/id/1320306462/video/4k-abstract-luxury-black-grey-gradient-backgrounds-with-diagonal-golden-metallic-stripes.jpg?s=640x640&k=20&c=zwBGZfYlbYVMNcnJirViOlEOFHLkPJeg9z-HvfLr77Y=');
 background-size:cover;
+// background-color: #e5e5e5;
 color: white;
 font-size: 1.2rem;
 background-repeat: no-repeat;
@@ -30,33 +30,18 @@ padding: 3rem 0rem;
     font-size: 1.5rem;
     background-color: white;
     align-items: center;
+    color: white;
     padding: 2rem;
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    cursor: pointer;
+    height: 10rem;
     align-items: center;
     text-align:center;
     border-radius: 18px;
     .icons{
       font-size: 4rem;
       margin: 1rem 0rem;
-    }
-    .links{
-      text-decoration : none;
-      display: flex;
-      justify-content: Center;
-      text-align: center;
-      .link{
-        border-radius: 12px;
-        text-decoration : none;
-        color: black;
-        padding: 1rem;
-        background-color: white;
-       
-      }
-      .link:hover{
-        background-color: black;
-        color: #dbba00;
-      }
+      color: white;
     }
   }
 }
@@ -93,9 +78,6 @@ const ConnectWithUs = () => {
           <BsWhatsapp className='icons' style={{color:'white'}} />
           </div>
           <p>Whatsapp</p>
-          <div  className="links" >
-          <NavLink className="link">Connect </NavLink>
-          </div>
         </div>
 
         <div className='box' style={{backgroundColor:'#2E86AB'}}>
@@ -103,9 +85,6 @@ const ConnectWithUs = () => {
         <BiPhoneCall className='icons' />
           </div>
           <p>Request a Call Back</p>
-          <div  className="links" >
-          <NavLink  className="link">Call Now</NavLink>
-          </div>
         </div>
 
         <div className='box' style={{backgroundColor:'#FF3300'}}>
@@ -113,9 +92,6 @@ const ConnectWithUs = () => {
         <BiLogoGmail className='icons'  />
           </div>
           <p>Book An Site Visit</p>
-          <div  className="links" >
-          <NavLink  className="link">Book Now</NavLink>
-          </div>
         </div>
 
 

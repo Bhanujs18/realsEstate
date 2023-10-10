@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.section`
 color: black;
+text-align: center;
 .img{
     height: 5rem;
     width: 5rem;
@@ -12,6 +13,7 @@ color: black;
 .text{
     padding: 1rem;
     text-align: center;
+    font-weight: 400;
 }
 
 @media(max-width:1000px){
@@ -26,10 +28,11 @@ const ReviewsCards = () => {
   return (
     <Wrapper>
         <div style={{display:'flex' , justifyContent:'center'}}>
-            <img alt='img' className='img' src='../imgs/logo.jpg' />
+            <img alt='img' className='img' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf8HANAcGvlV9oQfX2VhN9CQkdeOQC5tGfrUEs5FJQdglt7xT_YqChLQGGQNDk-W-Otgg&usqp=CAU' />
         </div>
+        Drake
         <div className='text'>
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda quaerat dolorem! Id cumque aliquid labore. Dolor minus nobis vel libero a, eum, praesentium expedita cum eligendi laudantium, nulla iusto?"
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda quaerat dolorem! Id cumque aliquid labore.""
         </div>
     </Wrapper>
   )

@@ -18,8 +18,8 @@ const Home = () => {
     <div>
       <MainScreen />
       <Category />
-        <Builders />
       <TrendingLocations />
+      <Builders />
       <Goal />
       <TrendingProperties />
       <Certificates />

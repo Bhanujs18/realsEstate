@@ -27,7 +27,7 @@ const Builders = () => {
   return (
     <Wrapper>
         {/* <p className='heading'>Builders</p> */}
-  <div style={{display:'flex' , justifyContent:'center'}}>
+  <div style={{display:'flex' , justifyContent:'center' , width:'100%'}}>
       <Swiper
         slidesPerView={6}
         centeredSlides={true}
@@ -42,13 +42,15 @@ const Builders = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-       <SwiperSlide><img alt='img' src='https://www.30thfeb.com/wp-content/uploads/2015/09/team-builder-logo.jpg' className='img' /></SwiperSlide>
+       <SwiperSlide><img alt='img' src='https://etimg.etb2bimg.com/photo/79704103.cms' className='img' /></SwiperSlide>
        <SwiperSlide><img alt='img' src='https://findvectorlogo.com/wp-content/uploads/2019/04/indian-construction-equipment-manufacturers-association-icema-vector-logo.png' className='img' /></SwiperSlide>
-       <SwiperSlide><img alt='img' src='https://www.30thfeb.com/wp-content/uploads/2015/09/team-builder-logo.jpg' className='img' /></SwiperSlide>
-       <SwiperSlide><img alt='img' src='https://www.30thfeb.com/wp-content/uploads/2015/09/team-builder-logo.jpg' className='img' /></SwiperSlide>
-       <SwiperSlide><img alt='img' src='https://www.30thfeb.com/wp-content/uploads/2015/09/team-builder-logo.jpg' className='img' /></SwiperSlide>
-       <SwiperSlide><img alt='img' src='https://www.30thfeb.com/wp-content/uploads/2015/09/team-builder-logo.jpg' className='img' /></SwiperSlide>
-       <SwiperSlide><img alt='img' src='https://www.30thfeb.com/wp-content/uploads/2015/09/team-builder-logo.jpg' className='img' /></SwiperSlide>
+       <SwiperSlide><img alt='img' src='https://etimg.etb2bimg.com/photo/79704103.cms' className='img' /></SwiperSlide>
+       <SwiperSlide><img alt='img' src='https://findvectorlogo.com/wp-content/uploads/2019/04/indian-construction-equipment-manufacturers-association-icema-vector-logo.png' className='img' /></SwiperSlide><SwiperSlide><img alt='img' src='https://etimg.etb2bimg.com/photo/79704103.cms' className='img' /></SwiperSlide>
+       <SwiperSlide><img alt='img' src='https://findvectorlogo.com/wp-content/uploads/2019/04/indian-construction-equipment-manufacturers-association-icema-vector-logo.png' className='img' /></SwiperSlide><SwiperSlide><img alt='img' src='https://etimg.etb2bimg.com/photo/79704103.cms' className='img' /></SwiperSlide>
+       <SwiperSlide><img alt='img' src='https://findvectorlogo.com/wp-content/uploads/2019/04/indian-construction-equipment-manufacturers-association-icema-vector-logo.png' className='img' /></SwiperSlide><SwiperSlide><img alt='img' src='https://etimg.etb2bimg.com/photo/79704103.cms' className='img' /></SwiperSlide>
+       <SwiperSlide><img alt='img' src='https://findvectorlogo.com/wp-content/uploads/2019/04/indian-construction-equipment-manufacturers-association-icema-vector-logo.png' className='img' /></SwiperSlide><SwiperSlide><img alt='img' src='https://etimg.etb2bimg.com/photo/79704103.cms' className='img' /></SwiperSlide>
+       <SwiperSlide><img alt='img' src='https://findvectorlogo.com/wp-content/uploads/2019/04/indian-construction-equipment-manufacturers-association-icema-vector-logo.png' className='img' /></SwiperSlide><SwiperSlide><img alt='img' src='https://etimg.etb2bimg.com/photo/79704103.cms' className='img' /></SwiperSlide>
+       <SwiperSlide><img alt='img' src='https://findvectorlogo.com/wp-content/uploads/2019/04/indian-construction-equipment-manufacturers-association-icema-vector-logo.png' className='img' /></SwiperSlide>
       </Swiper>
       </div>
     </Wrapper>

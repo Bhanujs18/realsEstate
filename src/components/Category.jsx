@@ -5,6 +5,10 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
 display: flex;
 justify-content: center;
+color: white;
+// background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpIbOlkF2UAfC1Tp4HwL8emxnj5fvzQ0Nbag&usqp=CAU');
+ background-color: black;
+background-size: cover;
 padding: 1rem;
 .container{
   .heading{
@@ -20,25 +24,20 @@ padding: 1rem;
     font-weight : 600;
     .button{
     .link{
-        display: flex;
-       
-        justify-content : center;
-        background-color: black;
-        padding: 1rem;
-        color: white;
-        text-decoration : none;
-       
-        border: 2px black solid;
-    }
-    .link:hover{
-        background-color: white;
-        color: black;
+      
     }
     
   }
   
 }
 }
+
+
+
+
+
+
+
 
 @media(max-width: 932px){
     .container{
@@ -80,23 +79,24 @@ const Category = () => {
        
         <div className='container'>
             <div>
-              <p className='heading'>Looking to Buy a new property or sell</p>
+              <p className='heading'>Looking to Buy a new property or sell !!!</p>
             </div>
      
             <div style={{display:'flex' , width:'100%' , justifyContent:'center'}}>
             <div className='buttons'>
                 
                 <div className='button'>
-                    <NavLink className='link'>Residential</NavLink>
+                    <NavLink className='link button-28'>Residential</NavLink>
                 </div>
 
                 <div className='button'>
-                    <NavLink className='link'>Commercial</NavLink>
+                    <NavLink className='link button-28'>Commercial</NavLink>
+                    
                 </div>
 
 
                  <div className='button'>
-                    <NavLink className='link'>Others</NavLink>
+                    <NavLink className='link button-28'>Others</NavLink>
                 </div>
              
             </div>

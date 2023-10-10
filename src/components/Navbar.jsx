@@ -215,7 +215,7 @@ const NavBar = () => {
     <Wrapper>     
        <div className="navbar">
             <div>
-                <NavLink to='/'><img className="navlogo" src='./imgs/golden_logo.png' alt="logo" /></NavLink>
+                <NavLink to='/'><img className="navlogo" src='./imgs/golden_logo1.png' alt="logo" /></NavLink>
             </div>
            
 

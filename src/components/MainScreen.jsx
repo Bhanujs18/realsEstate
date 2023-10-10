@@ -17,10 +17,18 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 const Wrapper = styled.section`
 .container{
     width: 100%;
-    height: 70%;
+    height: 35rem;
 .img{
-    height: 30rem;
+    height: 35rem;
     width: 100%;
+    position: relative;
+}
+.box{
+  position: absolute;
+  top:40%;
+  z-index: 999;
+  left:50%;
+  transform: translate(-50%,50%);
 }
 }
 `
@@ -34,24 +42,32 @@ const MainScreen = () => {
         effect={'fade'}
         navigation={false}
         autoplay={{
-        delay: 500
+        delay: 1500
        }}
          modules={[EffectFade, Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className='img' src="https://travelplandubai.com/wp-content/uploads/2018/04/1.jpg" />
+          <img className='img' src="https://media.istockphoto.com/id/827901014/photo/dubai-marina-city-skyline-in-the-united-arab-emirates.jpg?s=612x612&w=0&k=20&c=IZNEwPuR2-oAdjDEiimLvvCrntxBqCkMvDXM0uDvnRk=" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='img' src="../imgs/banner.png" />
+          <img className='img' src="https://images3.alphacoders.com/997/997855.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='img' src="https://lh3.googleusercontent.com/pVJD_dPOHAqTsvKLP9_1WD81kxX1077ZkZS6AmqhRNuoxAbE9wAnl1OirEo64iKRoEkcXICUrLa4Pz7Cp6EE7sHvRFkxSMvVhXgbO2k=h450-rw" />
+          <img className='img' src="https://wallpapersmug.com/large/38d8ee/dubai-buildings-cityscape-night-8k.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='img' src="https://propertiesingoa.co.in/wp-content/uploads/2023/08/goa-banner-1-1350x500.jpg" />
+          <img className='img' src="https://cdn.wallpapersafari.com/66/3/R7JNsc.jpg" />
         </SwiperSlide>
       </Swiper>
+
+      <div className='box'>
+            <div>
+                <img src='../imgs/search.png' />              
+            </div> 
+      </div>
+
+
       </div>
     </Wrapper>
   )

@@ -41,13 +41,13 @@ padding: 2rem 0rem;
             text-decoration:none;
             font-size: 1.2rem;
             background-color: white;
-            border: 2px #dbba00 solid;
+            border: 2px grey solid;
              color: black;
             padding: 0.8rem 1.8rem;
         }
         .button:hover{
-            background-color: black;
-            color: #dbba00;
+            background-color: grey;
+            color: white;
         }
     }
 }

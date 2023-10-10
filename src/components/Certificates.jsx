@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
 import styled from 'styled-components';
-import OurMission from './OurMission';
+
 import CertificatesSlider from './CertificatesSlider';
 
 const Wrapper = styled.section`
@@ -17,9 +17,10 @@ padding: 2rem 0rem;
     .img_div{
        display: flex;
        justify-content: center;
-
+       border: 10px grey solid;
        .img{
-        width: 20rem;
+        width: 26rem;
+        
        }
     }
     .Content_div{
@@ -69,9 +70,9 @@ padding: 2rem 0rem;
         .img_div{
            display: flex;
            justify-content: center;
-    
            .img{
             width: 20rem;
+            
            }
         }
         .Content_div{
@@ -91,15 +92,16 @@ const Certificates = () => {
   return (
     <Wrapper>
         <div className='container'>
+        <div className='Content_div'>
+              <p className='heading'>Properties Certificates</p>
+            </div>
             <div className='img_div'>
                 <div className='img'>
                <CertificatesSlider />
                
                </div>
             </div>
-            <div className='Content_div'>
-              <p className='heading'>Properties Certificates</p>
-            </div>
+           
         </div>
     </Wrapper>
   )
