@@ -21,7 +21,7 @@ padding: 3rem 0rem;
 
 }
 .container{
-  color: black;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
@@ -51,7 +51,7 @@ padding: 3rem 0rem;
         color: black;
         padding: 1rem;
         background-color: white;
-        border: 2px black solid
+       
       }
       .link:hover{
         background-color: black;
@@ -88,9 +88,9 @@ const ConnectWithUs = () => {
        <div className='container'>
 
 
-        <div className='box'>
+        <div className='box' style={{backgroundColor:'green'}}>
           <div style={{display:'flex' , justifyContent:'center' , width:'100%'}} >
-          <BsWhatsapp className='icons' style={{color:'green'}} />
+          <BsWhatsapp className='icons' style={{color:'white'}} />
           </div>
           <p>Whatsapp</p>
           <div  className="links" >
@@ -98,9 +98,9 @@ const ConnectWithUs = () => {
           </div>
         </div>
 
-        <div className='box'>
+        <div className='box' style={{backgroundColor:'#2E86AB'}}>
         <div style={{display:'flex' , justifyContent:'center' , width:'100%'}} >
-        <BiPhoneCall className='icons' style={{color:'#2E86AB'}} />
+        <BiPhoneCall className='icons' />
           </div>
           <p>Request a Call Back</p>
           <div  className="links" >
@@ -108,9 +108,9 @@ const ConnectWithUs = () => {
           </div>
         </div>
 
-        <div className='box'>
+        <div className='box' style={{backgroundColor:'#FF3300'}}>
         <div style={{display:'flex' , justifyContent:'center' , width:'100%'}} >
-        <BiLogoGmail className='icons' style={{color:'#FF3300'}} />
+        <BiLogoGmail className='icons'  />
           </div>
           <p>Book An Site Visit</p>
           <div  className="links" >

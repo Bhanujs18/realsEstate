@@ -23,7 +23,7 @@ const Wrapper = styled.section`
             width: 20rem;
             
             .img{
-                height: 15rem;
+                height: 12rem;
                 width: 20rem;
             }
         }
@@ -66,17 +66,17 @@ const NewsAndLetter = () => {
               <div className='content'>
           
                 <div className='box'>
-                     <img className='img' src='https://media.istockphoto.com/id/1197831888/vector/male-hand-holding-megaphone-with-breaking-news-speech-bubble-loudspeaker-banner-for-business.jpg?s=612x612&w=0&k=20&c=4CvdND_C8H3AxDMlEAZ8j9oagSvlmMcNHlrVoqoc9KQ=' alt='img' />
+                     <img className='img' src='https://www.track2realty.track2media.com/wp-content/uploads/2011/01/20_1.jpeg' alt='img' />
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum quae expedita accusantium maiores fugit labore, possimus eos impedit suscipit itaque eligendi sed ratione repellat delectus quod recusandae. Sit, atque?</p>
                 </div>
 
                 <div className='box'>
-                     <img className='img' src='https://media.istockphoto.com/id/1197831888/vector/male-hand-holding-megaphone-with-breaking-news-speech-bubble-loudspeaker-banner-for-business.jpg?s=612x612&w=0&k=20&c=4CvdND_C8H3AxDMlEAZ8j9oagSvlmMcNHlrVoqoc9KQ=' alt='img' />
+                     <img className='img' src='https://images.indianexpress.com/2023/06/sebi1.jpg?w=414' alt='img' />
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum quae expedita accusantium maiores fugit labore, possimus eos impedit suscipit itaque eligendi sed ratione repellat delectus quod recusandae. Sit, atque?</p>
                 </div>
 
                 <div className='box'>
-                     <img className='img' src='https://media.istockphoto.com/id/1197831888/vector/male-hand-holding-megaphone-with-breaking-news-speech-bubble-loudspeaker-banner-for-business.jpg?s=612x612&w=0&k=20&c=4CvdND_C8H3AxDMlEAZ8j9oagSvlmMcNHlrVoqoc9KQ=' alt='img' />
+                     <img className='img' src='https://uploads-ssl.webflow.com/5da0f11ad1589b85b520da67/607e41e8ea6348151920167f_auction-bid.jpg' alt='img' />
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum quae expedita accusantium maiores fugit labore, possimus eos impedit suscipit itaque eligendi sed ratione repellat delectus quod recusandae. Sit, atque?</p>
                 </div>
 

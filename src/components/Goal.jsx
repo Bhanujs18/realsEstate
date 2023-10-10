@@ -82,7 +82,7 @@ const Goal = () => {
     <Wrapper>
         <div className='container'>
             <div className='img_div'>
-                <img className='img' src='https://img.freepik.com/premium-photo/business-adviser-analyzing-financial-figures-denoting-progress-work-company_484651-19944.jpg' alt='img' />
+                <img className='img' src='https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/5ba1a-top-companies-in-india.jpg?fit=1000%2C665&ssl=1' alt='img' />
                
                 
             </div>

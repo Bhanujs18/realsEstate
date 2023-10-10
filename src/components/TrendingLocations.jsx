@@ -101,21 +101,21 @@ const TrendingLocations = () => {
             <div style={{display:'flex' , width:'100%' , justifyContent:'center'}}>
             <div className='cities'>
                 <div className='box'>
-                    <img alt='img' className='img' src='../imgs/dubai.jpg' />
+                    <img alt='img' className='img' src='https://media.timeout.com/images/105242423/750/422/image.jpg' />
                     <p className='name'>Dubai</p>
                 </div>
 
                 <div className='box'>
-                    <img alt='img' className='img' src='../imgs/dubai.jpg' />
+                    <img alt='img' className='img' src='https://www.holidify.com/images/bgImages/UDAIPUR.jpg' />
                     <p className='name'>Gurgaon</p>
                 </div>
 
                 <div className='box'>
-                    <img alt='img' className='img' src='../imgs/dubai.jpg' />
+                    <img alt='img' className='img' src='https://www.travelseewrite.com/wp-content/uploads/2021/10/The-beauty-of-Udaipur-is-best-enjoyed-at-night-City-Palace-and-Lake-Pichola.jpg' />
                     <p className='name'>New Delhi</p>
                 </div>
                 <div className='box'>
-                    <img alt='img' className='img' src='../imgs/dubai.jpg' />
+                    <img alt='img' className='img' src='https://assets.traveltriangle.com/blog/wp-content/uploads/2016/02/Fateh-Sagar-Lake.jpg' />
                     <p className='name'>Goa</p>
                 </div>
 

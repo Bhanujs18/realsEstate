@@ -22,7 +22,7 @@ const Wrapper = styled.section`
             width: 20rem;
             
             .img{
-                height: 15rem;
+                height: 12rem;
                 width: 20rem;
             }
         }
@@ -72,12 +72,12 @@ const Blogs = () => {
               <div className='content'>
           
                 <div className='box'>
-                     <img className='img' src='../imgs/logo.jpg' alt='img' />
+                     <img className='img' src='https://www.point2homes.com/news/wp-content/uploads/sites/51/2020/01/best-real-estate-blogs-fb.jpg' alt='img' />
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum quae expedita accusantium maiores fugit labore, possimus eos impedit suscipit itaque eligendi sed ratione repellat delectus quod recusandae. Sit, atque?</p>
                 </div>
 
                 <div className='box'>
-                <img className='img' src='../imgs/logo.jpg' alt='img' />
+                <img className='img' src='https://rwncdn.s3.amazonaws.com/wp-content/uploads/Best-Real-Estate-Blogs-Featured.jpg' alt='img' />
                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laborum quae expedita accusantium maiores fugit labore, possimus eos impedit suscipit itaque eligendi sed ratione repellat delectus quod recusandae. Sit, atque?</p>
                 </div>
 

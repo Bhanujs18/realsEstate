@@ -100,7 +100,7 @@ const TrendingProperties = () => {
                 
 
             <div className='box'>
-                    <img alt='img' className='img' src='../imgs/dubai.jpg' />
+                    <img alt='img' className='img' src='https://thumbs.dreamstime.com/b/suburban-house-modern-american-front-entrance-green-grass-front-31081489.jpg' />
                    <div className='content'>
                    <p className='location'>Gurgaon</p>
                     <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -112,21 +112,7 @@ const TrendingProperties = () => {
 
 
                <div className='box'>
-                    <img alt='img' className='img' src='../imgs/dubai.jpg' />
-                   <div className='content'>
-                   <p className='location'>Gurgaon</p>
-                    <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                         Est temporibus optio sapiente recusandae velit consequatur
-                          commodi esse molestias a. Excepturi quas, labore voluptat
-                          es numquam alias laboriosam recusandae a cumque nesciunt?</p>
-                   </div>    
-               </div>
-
-
-
-
-               <div className='box'>
-                    <img alt='img' className='img' src='../imgs/dubai.jpg' />
+                    <img alt='img' className='img' src='https://thumbs.dreamstime.com/b/family-american-house-29568541.jpg' />
                    <div className='content'>
                    <p className='location'>Gurgaon</p>
                     <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -139,9 +125,23 @@ const TrendingProperties = () => {
 
 
 
+               <div className='box'>
+                    <img alt='img' className='img' src='https://thumbs.dreamstime.com/b/american-house-new-manicured-suburban-beautiful-sunny-day-31081957.jpg' />
+                   <div className='content'>
+                   <p className='location'>Gurgaon</p>
+                    <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                         Est temporibus optio sapiente recusandae velit consequatur
+                          commodi esse molestias a. Excepturi quas, labore voluptat
+                          es numquam alias laboriosam recusandae a cumque nesciunt?</p>
+                   </div>    
+               </div>
+
+
+
+
 
                <div className='box'>
-                    <img alt='img' className='img' src='../imgs/dubai.jpg' />
+                    <img alt='img' className='img' src='https://assets-global.website-files.com/5e99608fae81cfc99b44bcc1/5ecba07789d1eed8f3e7de0c_best-listing-photos-property-snaps-nighttime-614x409.jpeg' />
                    <div className='content'>
                    <p className='location'>Gurgaon</p>
                     <p className='desc'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
