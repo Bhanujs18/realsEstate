@@ -5,7 +5,7 @@ const Wrapper = styled.section`
 padding: 3rem 0rem;
 // background-image: url('../imgs/grey.jpg');
 background-size:cover;
-color: black;
+color: #20262F;
 .container{
     display: block;
     .heading{
@@ -27,24 +27,30 @@ color: black;
         gap: 2rem;
         .box{
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-           
-            width: 19rem;
+            border-radius: 15px;
+            overflow: hidden;
+            
+            width: 17rem;
             .content{
+                font-weight: 300;
                 padding: 1rem;
                 .location{
-                    background-color: black;
+                    background-color: #20262F;
+                     font-size: 0.7rem;
                     color: white ;
+                    border-radius: 8px;
                     width: max-content;
                     padding: 0.4rem;
                    }
                 .desc{
                     text-align: justify;   
+                    font-size: 0.8rem;
                 }
             }
             
         .img{
            
-            width: 19rem;
+            width: 17rem;
           
         }
        
@@ -54,9 +60,9 @@ color: black;
     .seeAllLocations{
         font-weight : 600;
         text-align : center;
-        font-size: 1.3rem;
-        border: 2px black solid;
-        background-color: black;
+        font-size: 1rem;
+        border: 2px #20262F solid;
+        background-color: #20262F;
         color: white;
         width: max-content;
         padding: 1.2rem 2rem;

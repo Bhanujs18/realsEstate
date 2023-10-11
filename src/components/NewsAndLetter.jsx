@@ -10,7 +10,7 @@ const Wrapper = styled.section`
         justify-content: center;
         .head{
             font-size: 2rem;
-
+           font-weight: 600;
         }
     }
     .content{
@@ -59,7 +59,7 @@ const NewsAndLetter = () => {
 
               <div className='heading'>
                     
-                        <p className='head'>News And Letters</p>
+                        <p className='head'>News Letters</p>
                    
               </div>
               <div style={{display:'flex' , width:'100%' , justifyContent:'center' }}>

@@ -5,16 +5,20 @@ import styled from 'styled-components';
 const Wrapper = styled.section`
 display: flex;
 justify-content: center;
+
 color: white;
-// background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpIbOlkF2UAfC1Tp4HwL8emxnj5fvzQ0Nbag&usqp=CAU');
- background-color: black;
-background-size: cover;
-padding: 1rem;
+// background-image: url('https://us.123rf.com/450wm/yesheyingchuk/yesheyingchuk2008/yesheyingchuk200800821/155143271-black-luxury-gold-background-golden-silver-polygon-banner-christmas-new-year-celebration-border.jpg?ver=6');
+background-color: #20262F;
+
+padding: 1rem 0rem;
 .container{
+    padding: 1rem 0rem;
   .heading{
    text-align : center;
-   font-weight: 600;
+   
    font-size : 2rem;
+     
+   font-weight: 600;
   }
   
   .buttons{

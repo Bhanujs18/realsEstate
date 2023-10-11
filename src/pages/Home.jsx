@@ -1,7 +1,7 @@
 
 
 import Blogs from "../components/Blogs"
-import Builders from "../components/Builders"
+// import Builders from "../components/Builders"
 import Category from "../components/Category"
 import Certificates from "../components/Certificates"
 import ConnectWithUs from "../components/ConnectWithUs"
@@ -19,7 +19,7 @@ const Home = () => {
       <MainScreen />
       <Category />
       <TrendingLocations />
-      <Builders />
+      {/* <Builders /> */}
       <Goal />
       <TrendingProperties />
       <Certificates />

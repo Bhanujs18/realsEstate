@@ -4,20 +4,23 @@ import styled from 'styled-components';
 
 import CertificatesSlider from './CertificatesSlider';
 
-const Wrapper = styled.section`
-background-image: url('https://t3.ftcdn.net/jpg/03/48/06/98/360_F_348069838_cWdfRHqvslRsmqp3M2Wtto3lqEA1AFfd.jpg');
-padding: 2rem 0rem;
 
+const Wrapper = styled.section`
+// background-image: url('https://t3.ftcdn.net/jpg/03/48/06/98/360_F_348069838_cWdfRHqvslRsmqp3M2Wtto3lqEA1AFfd.jpg');
+padding: 2rem 0rem;
+background-color: #20262F;
 .container{
+   
     width: 100%;
     display: flex;
    justify-content: center;
    align-items: center;
    gap: 3rem;
     .img_div{
+        width: 50%
        display: flex;
        justify-content: center;
-       border: 10px grey solid;
+       border: 20px white solid;
        .img{
         width: 26rem;
         
@@ -25,11 +28,26 @@ padding: 2rem 0rem;
     }
     .Content_div{
         padding: 1rem;
-       
-        .heading{
         display: flex;
+         background-color: #20262F;
+         width: 50%;
         justify-content: center;
-        font-size: 4rem;
+        .heading{
+            display: flex;
+            justify-content: center;
+      
+            text-transform: uppercase;
+            text-shadow: -15px 5px 20px black;
+            color: white;
+            letter-spacing: -0.05em;
+            font-family: 'Anton', Arial, sans-serif;
+            user-select: none;
+            text-transform: uppercase;
+            font-size: 4rem;
+            transition: all 0.25s ease-out;
+        }
+        .heading:hover {
+            text-shadow: -16px 6px 15px black;
         }
     }
 }
@@ -44,16 +62,17 @@ padding: 2rem 0rem;
         .img_div{
            display: flex;
            justify-content: center;
-    
+           
            .img{
             width: 20rem;
            }
         }
         .Content_div{
             padding: 1rem;
-           
+           width: 100%;
             .heading{
             display: flex;
+       
             justify-content: center;
             font-size: 2rem;
             }
@@ -93,13 +112,15 @@ const Certificates = () => {
     <Wrapper>
         <div className='container'>
         <div className='Content_div'>
-              <p className='heading'>Properties Certificates</p>
+              <p className='heading'>Properties <br />
+              Certificates</p>
             </div>
             <div className='img_div'>
-                <div className='img'>
-               <CertificatesSlider />
-               
-               </div>
+              
+              <div style={{width:'25rem'}}>
+             <CertificatesSlider />  
+            {/* <img className='img' alt='img' src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-of-award-design-template-e085c24bc1b22051b64768996f52debc_screen.jpg?ts=1608659703' /> */}
+              </div>
             </div>
            
         </div>
@@ -108,3 +129,4 @@ const Certificates = () => {
 }
 
 export default Certificates
+

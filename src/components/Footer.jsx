@@ -5,8 +5,8 @@ import {BsInstagram , BsFacebook , BsTwitter } from 'react-icons/bs';
 import {BiLogoGmail} from 'react-icons/bi';
 
 const Wrapper = styled.section`
-
-background-color: black;
+box-shadow: white 0px 3px 8px;
+background-color: #20262F;
 
 .footerDiv{
   display: flex;
@@ -42,7 +42,8 @@ background-color: black;
 .copyright{
   text-align: center;
   color: white;
-  font-size: 0.7rem;
+  padding: 1rem;
+  font-size: 1rem;
 }
 
 // responsive -------------------------------------------------------------------
@@ -85,7 +86,7 @@ const Footer = () => {
        
        
         <div className='footer-div-sections'>
-        <img alt="main-logo" src="../imgs/logo.jpg" className='footerlogo' />
+        <img alt="main-logo" src="../imgs/platinum.png" className='footerlogo' />
         </div>
        
        
@@ -131,7 +132,7 @@ const Footer = () => {
 
   
      </div>
-     <p className='copyright'>© 2023 Tik Tik. All rights reserved</p>
+     <p className='copyright'>© 2023 Elevate ProEx. All rights reserved</p>
     </Wrapper>
   )
 }

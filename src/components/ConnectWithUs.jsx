@@ -5,9 +5,13 @@ import {BsWhatsapp} from 'react-icons/bs';
 import {BiPhoneCall} from 'react-icons/bi'
 
 const Wrapper = styled.section`
- background-image: url('https://media.istockphoto.com/id/1320306462/video/4k-abstract-luxury-black-grey-gradient-backgrounds-with-diagonal-golden-metallic-stripes.jpg?s=640x640&k=20&c=zwBGZfYlbYVMNcnJirViOlEOFHLkPJeg9z-HvfLr77Y=');
+// background-image: url('https://media.istockphoto.com/id/1320306462/video/4k-abstract-luxury-black-grey-gradient-backgrounds-with-diagonal-golden-metallic-stripes.jpg?s=640x640&k=20&c=zwBGZfYlbYVMNcnJirViOlEOFHLkPJeg9z-HvfLr77Y=');
 background-size:cover;
-// background-color: #e5e5e5;
+background-color: #20262F;
+// background: #0F2027;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 color: white;
 font-size: 1.2rem;
 background-repeat: no-repeat;

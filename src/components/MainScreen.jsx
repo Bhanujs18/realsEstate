@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 
 
 // import required modules
-import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
+import { Autoplay, EffectFade } from 'swiper/modules';
 
 
 const Wrapper = styled.section`
@@ -21,14 +21,36 @@ const Wrapper = styled.section`
 .img{
     height: 35rem;
     width: 100%;
+  
     position: relative;
 }
 .box{
   position: absolute;
-  top:40%;
+  top:10%;
+ display: flex;
+ justify-content: center;
   z-index: 999;
+  width: 100%;
   left:50%;
   transform: translate(-50%,50%);
+  .tagline{
+   text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    text-shadow: -15px 5px 20px black;
+    color: white;
+    letter-spacing: -0.05em;
+    font-family: 'Anton', Arial, sans-serif;
+    user-select: none;
+    text-transform: uppercase;
+    font-size: 4rem;
+    transition: all 0.25s ease-out;
+  }
+  .image{
+    display: flex;
+    justify-content: center;
+    width: 45rem;
+  }
 }
 }
 `
@@ -48,22 +70,26 @@ const MainScreen = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className='img' src="https://media.istockphoto.com/id/827901014/photo/dubai-marina-city-skyline-in-the-united-arab-emirates.jpg?s=612x612&w=0&k=20&c=IZNEwPuR2-oAdjDEiimLvvCrntxBqCkMvDXM0uDvnRk=" />
+          <img className='img' alt='img' src="../imgs/main1.jpeg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='img' src="https://images3.alphacoders.com/997/997855.jpg" />
+          <img className='img' alt='img' src="../imgs/main2.jpeg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='img' src="https://wallpapersmug.com/large/38d8ee/dubai-buildings-cityscape-night-8k.jpg" />
+          <img className='img' alt='img' src="https://assets.architecturaldigest.in/photos/60084b371dd783c692024f2e/master/w_1600%2Cc_limit/Mumbai-Lodha-World-One-towers-apartment-9.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img className='img' src="https://cdn.wallpapersafari.com/66/3/R7JNsc.jpg" />
+          <img className='img' alt='img' src="../imgs/main4.jpg" />
         </SwiperSlide>
       </Swiper>
 
       <div className='box'>
-            <div>
-                <img src='../imgs/search.png' />              
+            <div style={{display:'block'}}>
+               <p className='tagline' >  Reality with Corporeal</p> 
+               <div style={{display:'flex' , justifyContent:'center'}}>
+               <img className='image' alt='img' src='../imgs/search.png' />       
+               </div>
+                       
             </div> 
       </div>
 

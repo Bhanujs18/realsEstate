@@ -7,24 +7,33 @@ import { CgClose } from 'react-icons/cg';
 
 
 const Wrapper = styled.section`
-
+font-family: 'Anton', Arial, sans-serif;
 z-index: 999;
 display: block;
 // background-color: #1C3041;
 width: 100%;
 
 .navbar{
-  background-color: black;
+  background-color: #20262F;
     display: flex;
     gap: 1rem;
     // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     justify-content: space-between;
     width: 100%;
-    .navlogo{
+    .logodiv{
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 1.5rem;
+      .navlogo{
         height: 4rem;
         padding: 0.4rem;
-        // filter: drop-shadow(0 0 0.75rem black);
+        
+         filter: drop-shadow(0 0 0.75rem black);
        }
+      
+    }
+   
     .mobmenu{
       display: none;
     }
@@ -34,8 +43,9 @@ width: 100%;
         align-items: center;
         margin-right: 1.5rem;
    .navbar_link{
-       color: #dbba00;
-      font-size: 1.5rem;
+       color: white;
+      font-size: 1.1rem;
+      font-weight: 600;
       text-decoration: none;
     }
       }
@@ -215,7 +225,7 @@ const NavBar = () => {
     <Wrapper>     
        <div className="navbar">
             <div>
-                <NavLink to='/'><img className="navlogo" src='./imgs/golden_logo1.png' alt="logo" /></NavLink>
+                <NavLink to='/' style={{textDecoration:'none'}}  className="logodiv"><img className="navlogo" src='./imgs/platinum.png' alt="logo" />ELEVATE <br /> PROEX</NavLink>
             </div>
            
 

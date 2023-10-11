@@ -3,8 +3,10 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-background-image: url('https://t3.ftcdn.net/jpg/03/48/06/98/360_F_348069838_cWdfRHqvslRsmqp3M2Wtto3lqEA1AFfd.jpg');
+// background-image: url('https://t3.ftcdn.net/jpg/03/48/06/98/360_F_348069838_cWdfRHqvslRsmqp3M2Wtto3lqEA1AFfd.jpg');
 padding: 2rem 0rem;
+background-color: #20262F;
+color: white;
 .container{
     width: 100%;
     display: flex;
@@ -16,7 +18,7 @@ padding: 2rem 0rem;
         // background-color: #dbba00;
         justify-content: center;
         .img{
-            border: 15px solid grey;
+            border: 15px solid #F2F2F2;
             height: 22rem;
             width: 29rem;
         }
@@ -25,16 +27,32 @@ padding: 2rem 0rem;
       
         width: 50%;
         .heading{
-            font-size: 2rem;
-            text-align: Center;
-            font-weight: 600;
+            display: flex;
+            justify-content: center;
+      
+            text-transform: uppercase;
+            text-shadow: -15px 5px 20px black;
+            color: white;
+            letter-spacing: -0.05em;
+            font-family: 'Anton', Arial, sans-serif;
+            user-select: none;
+            text-transform: uppercase;
+            font-size: 3rem;
+            transition: all 0.25s ease-out;
         }
         .content{
-            text-align: center;
-            font-size: 1.3rem;
-            line-height: 1.3;
-            font-weight: 500;
-           
+            
+            font-style:italic;
+            display: flex;
+            justify-content: center;
+            color: white;
+          
+            font-family: 'Anton', Arial, sans-serif;
+            user-select: none;
+            line-height: 1.7;
+            padding: 1rem;
+            font-size: 1rem;
+            transition: all 0.25s ease-out;
 
         }
         .button{
@@ -42,7 +60,7 @@ padding: 2rem 0rem;
             font-size: 1.2rem;
             background-color: white;
             border: 2px grey solid;
-             color: black;
+             color: #20262F;
             padding: 0.8rem 1.8rem;
         }
         .button:hover{
@@ -90,8 +108,7 @@ const Goal = () => {
                 <p className='heading'>ELEVATE PROEX</p>
                 <p className='content'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed veritatis molestiae recusandae delectus ut similique voluptates obcaecati! Provident aperiam eveniet eius molestias? Temporibus officiis debitis aliquam, ullam libero vel veritatis.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed veritatis molestiae recusandae delectus ut similique voluptates obcaecati! Provident aperiam eveniet eius molestias? Temporibus officiis debitis aliquam, ullam libero vel veritatis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed veritatis molestiae recusandae delectus ut similique voluptates obcaecati! Provident aperiam eveniet eius molestias? Temporibus officiis debitis aliquam, ullam libero vel veritatis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed veritatis molestiae recusandae delectus ut similique voluptates obcaecati! Provident aperiam eveniet eius molestias? Temporibus officiis debitis aliquam, ullam libero vel veritatis.</p>
+               </p>
                <div style={{width:'100%' , display: 'flex' , justifyContent:'center'}}>
                 <NavLink className='button'>Read More.</NavLink>
                 </div>

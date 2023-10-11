@@ -2,15 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-
+display: flex;
+background-color: #20262F;
+justify-content: center;
+padding: 1rem 0rem;
 .container{
+border: 5px #20262F solid;
+width: 90%;
+background-color: white;
+border-radius: 15px;
+padding: 1rem;
     display: block;
     .heading{
         display: flex;
         justify-content: center;
         .head{
             font-size: 2rem;
-
+           font-weight: 600;
         }
     }
     .content{
