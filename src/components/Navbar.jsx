@@ -1,212 +1,128 @@
-
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import {BsList} from 'react-icons/bs';
-import { useState} from "react";
-import { CgClose } from 'react-icons/cg';
-
+import { BsList } from "react-icons/bs";
+import { useState } from "react";
+import { CgClose } from "react-icons/cg";
+import { BsFillPhoneVibrateFill } from "react-icons/bs";
 
 const Wrapper = styled.section`
-font-family: 'Anton', Arial, sans-serif;
-z-index: 999;
-display: block;
-// background-color: #1C3041;
-width: 100%;
-
-.navbar{
-  background-color: #20262F;
+  font-family: "Anton", Arial, sans-serif;
+  z-index: 999;
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  display: block;
+  // background-color: #1C3041;
+  width: 100%;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  .navbar {
     display: flex;
     gap: 1rem;
+    padding: 0.6rem 0rem;
     // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     justify-content: space-between;
     width: 100%;
-    .logodiv{
+    .logodiv {
       display: flex;
       align-items: center;
       color: white;
       font-size: 1.5rem;
-      .navlogo{
-        height: 4rem;
+      .navlogo {
+        height: 3rem;
         padding: 0.4rem;
-        
-         filter: drop-shadow(0 0 0.75rem black);
-       }
-      
+
+        filter: drop-shadow(0 0 0.75rem black);
+      }
     }
-   
-    .mobmenu{
+
+    .mobmenu {
       display: none;
     }
-    .navbarlinks{
-        display: flex;
-        gap: 3rem;
-        align-items: center;
-        margin-right: 1.5rem;
-   .navbar_link{
-       color: white;
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-decoration: none;
-    }
-      }
-
-      .icons{
-       display: none;
-      }
-
-}
-
-// .sticky{
-//   background-color: black;
-//   display: flex;
-//   gap: 1rem;
-//   position: fixed;
-//   justify-content: space-between;
-//   width: 100%;
-//   .navlogo{
-//       height: 3rem;
-//       padding: 0.4rem;
-//      }
-//   .mobmenu{
-//     display: none;
-//   }
-//   .navbarlinks{
-//       display: flex;
-//       gap: 3rem;
-//       align-items: center;
-//       margin-right: 1.5rem;
-//  .navbar_link{
-//      color: #dbba00;
-//     font-size: 1.3rem;
-//     text-decoration: none;
-//   }
-//     }
-
-//     .icons{
-//      display: none;
-//     }
-
-// }
-
-
-
-// @media(max-width:644px){
-//   background-color: black;
-//   .sticky{
-//     display: flex;
-//     .navlogo{
-//       height: 3rem;
-//     }
-//     .navbarlinks{
-//       display:none;
-//     }
-//     .mobmenu{
-//       display: block;
-//       text-shadow: none;
-//       background-color: black;
-      
-//       position: fixed;
-//       gap: 2rem;
-//       width:100%;
-//       z-index: 999;
-//       .navbar_link{
-//         display: block;
-//         padding: 2rem;
-        
-//         position: relative;
-       
-//         text-decoration: none;
-//         .cartdiv{
-//           display: flex;
-//         }
-//       }  
-//     }
-//     .icons{
-//       align-items: center;
-//       display: flex;
-//       color: #dbba00;
-      
-//       font-size: 3rem;
-//       cursor: pointer;
-
-//     .open{
-//       color: #dbba00;
-//       position: relative;
-//     }
-//     .close{
-//       z-index: 999;
-//       color: #dbba00;
-//       position: relative;
-//     }
-
-
-
-//     }
-
-//   }
-// }
-
-
-@media(max-width:644px){
- 
-  .navbar{
-    display: flex;
-    .navlogo{
-      height: 3rem;
-    }
-    .navbarlinks{
-      display:none;
-    }
-    .mobmenu{
-      display: block;
-      text-shadow: none;
-      background-color: black;
-      
-      position: fixed;
-      gap: 2rem;
-      width:100%;
-      z-index: 999;
-      .navbar_link{
-        display: block;
-        padding: 2rem;
-        color: #dbba00;
-        position: relative;
-       
-        text-decoration: none;
-        .cartdiv{
-          display: flex;
-        }
-      }  
-    }
-    .icons{
-      align-items: center;
+    .navbarlinks {
       display: flex;
-      color: #dbba00;
-      
-      font-size: 3rem;
-      cursor: pointer;
-
-    .open{
-      color: #dbba00;
-      position: relative;
-    }
-    .close{
-      z-index: 999;
-      color: #dbba00;
-      position: relative;
+      gap: 3rem;
+      align-items: center;
+      margin-right: 1.5rem;
+      .navbar_link {
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
     }
 
-
-
+    .icons {
+      display: none;
     }
-
   }
-}
-`
+
+  @media (max-width: 895px) {
+    .navbar {
+      display: flex;
+      .logodiv {
+        .navlogo {
+          height: 3rem;
+        }
+      }
+      .navbarlinks {
+        display: none;
+      }
+      .mobmenu {
+        display: block;
+        text-shadow: none;
+        background-color: black;
+
+        position: fixed;
+        gap: 2rem;
+        width: 100%;
+        z-index: 999;
+        .navbar_link {
+          display: block;
+          padding: 2rem;
+          color: white;
+          position: relative;
+
+          text-decoration: none;
+          .cartdiv {
+            display: flex;
+          }
+        }
+      }
+      .icons {
+        align-items: center;
+        display: flex;
+        color: white;
+
+        font-size: 3rem;
+        cursor: pointer;
+
+        .open {
+          position: relative;
+        }
+        .close {
+          z-index: 999;
+
+          position: relative;
+        }
+      }
+    }
+  }
+`;
 
 const NavBar = () => {
-
- 
   const [icon, setIcon] = useState(true);
   // const [old , setOld] = useState('navbar');
   // window.onscroll = () => {
@@ -220,30 +136,73 @@ const NavBar = () => {
   //   }
   //   return setOld(temp);
   // }
-   
+
   return (
-    <Wrapper>     
-       <div className="navbar">
-            <div>
-                <NavLink to='/' style={{textDecoration:'none'}}  className="logodiv"><img className="navlogo" src='./imgs/platinum.png' alt="logo" />ELEVATE <br /> PROEX</NavLink>
-            </div>
-           
-
-       
-
-        <div  className= {icon ? "navbarlinks" : "mobmenu"}>
-        <NavLink className='navbar_link' to="/" onClick={()=>setIcon(true)}>Home</NavLink>
-        <NavLink className='navbar_link' to="/properties" onClick={()=>setIcon(true)}>Properties</NavLink>
-        <NavLink className='navbar_link' to="/about" onClick={()=>setIcon(true)}>About</NavLink>
-        <NavLink className='navbar_link' to="/contact" onClick={()=>setIcon(true)}>Contact</NavLink>
-            </div>
-            <div className="icons">
-        {icon ? <BsList className="open" onClick={()=>setIcon(false)} />  :  <CgClose className="close" onClick={()=>setIcon(true)}/>}
+    <Wrapper>
+      <div className="navbar">
+        <div>
+          <NavLink
+            to="/"
+            style={{ textDecoration: "none" }}
+            className="logodiv"
+          >
+            <img className="navlogo" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697264067/mainlogo_nbfx21.png" alt="logo" />
+          </NavLink>
         </div>
-            </div>
-           
+
+        <div className={icon ? "navbarlinks" : "mobmenu"}>
+          <NavLink className="navbar_link" to="/" onClick={() => setIcon(true)}>
+            HOME
+          </NavLink>
+          <NavLink
+          to="/properties/all"
+            className="navbar_link"
+            onClick={() => setIcon(true)}
+            style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+          >
+            PROPERTIES
+          </NavLink>
+          <NavLink
+            className="navbar_link"
+            to="/services"
+            onClick={() => setIcon(true)}
+          >
+            SERVICES
+          </NavLink>
+          <NavLink
+            className="navbar_link"
+            to="/about"
+            onClick={() => setIcon(true)}
+          >
+            ABOUT
+          </NavLink>
+          <NavLink
+            className="navbar_link"
+            to="/contact"
+            onClick={() => setIcon(true)}
+          >
+            CONTACT
+          </NavLink>
+          <NavLink
+          to="tel:+91-9991998060"
+            className="navbar_link"
+            onClick={() => setIcon(true)}
+            style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+          >
+            <BsFillPhoneVibrateFill />
+            +91-9991998060
+          </NavLink>
+        </div>
+        <div className="icons">
+          {icon ? (
+            <BsList className="open" onClick={() => setIcon(false)} />
+          ) : (
+            <CgClose className="close" onClick={() => setIcon(true)} />
+          )}
+        </div>
+      </div>
     </Wrapper>
-  )
-}
+  );
+};
 
 export default NavBar;

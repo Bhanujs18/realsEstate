@@ -1,30 +1,32 @@
 const flats = [{
     "id": 0,
     "price": 65,
-    "Location": "Gurgaon",
+    "Location": "Rajiv Chowk",
     "name": "Elevate 1",
     "rating": 4.1,
     "img":   "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs1" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs2" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
-    "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",      
+    "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
+    "place" : "delhi"      
 },
 {
     "id": 1,
     "price": 665,
-    "Location": "Noida",
+    "Location": "X Beach",
     "name": "Elevate 2",
     "rating": 4.1,
     "img": "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs1" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs2" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
-    "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
+    "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg", 
+    "place" : "goa"   
 },{
     "id": 2,
     "price": 65,
-    "Location": "Gurgaon",
+    "Location": "xyz goa",
     "name": "Elevate 3",
     "rating": 4.1,
     "img": "https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2016/04/08/Pictures/gurgaon-hindustan-construction-buildings-course-gurgaon-madhulika_36c2ff60-fcf9-11e5-b2cb-21770897bf70.jpg",
@@ -32,17 +34,20 @@ const flats = [{
     "imgs2" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
+    "place" : "goa"  
 },{
     "id": 3,
     "price": 65,
-    "Location": "Gurgaon",
+    "Location": "Rajori",
     "name": "Elevate 4",
     "rating": 4.1,
     "img": "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs1" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs2" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
-    "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
+    "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
+    "place" : "delhi"  
+    
 },{
     "id": 4,
     "price": 65,
@@ -57,7 +62,7 @@ const flats = [{
 },{
     "id": 5,
     "price": 65,
-    "Location": "Gurgaon",
+    "Location": "Burj Khalifa",
     "name": "Elevate Flats",
     "rating": 4.1,
     "img": "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
@@ -65,6 +70,8 @@ const flats = [{
     "imgs2" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
+    "place" : "dubai" ,
+    "type" : "Residential" 
 },{
     "id": 6,
     "price": 65,
@@ -75,7 +82,8 @@ const flats = [{
     "imgs1" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs2" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
-    "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
+    "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",  
+    "type" : "Residential"   
 },{
     "id": 7,
     "price": 65,
@@ -87,6 +95,7 @@ const flats = [{
     "imgs2" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
+    "type" : "Commercial"   
 },{
     "id": 8,
     "price": 65,
@@ -98,6 +107,7 @@ const flats = [{
     "imgs2" :  "https://kreatecube.com/usefull/Common/2/271.jpg",
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
+    "place" : "gurgaon"  
 },{
     "id": 9,
     "price": 65,

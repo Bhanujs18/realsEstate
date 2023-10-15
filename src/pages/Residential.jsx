@@ -1,8 +1,7 @@
 import React from 'react'
 import { NavLink, useParams } from 'react-router-dom'
-import flats from '../data/Flats';
-import styled from 'styled-components';
-import SearchCategory from '../components/SearchCategory';
+import styled from 'styled-components'
+import flats from '../data/Flats'
 
 const PropertySection = styled.div`
 display: flex;
@@ -19,7 +18,7 @@ width:100%;
 
 const Wrapper = styled.div`
 display:grid;
-grid-template-columns:repeat(4, 1fr);
+grid-template-columns:repeat(3, 1fr);
 gap: 2rem;
 padding: 2rem 0rem;
 margin:0;
@@ -74,19 +73,88 @@ const Desc = styled.p`
 margin:0px;
 `
 
-const Properties = () => {
+const Box = styled.section`
+display: flex;
+justify-content:center;
+width:100%;
+padding: 0.5rem 0rem;
+`
+const Buttons = styled.div`
+display: flex;
+justify-content:center;
 
-    const {place} = useParams();
-    const proptery = (place==="all") ? flats: flats.filter((cur)=>cur.place===place);
+`
+const Button = styled.div`
+display: flex;
+justify-content:center;
+text-align:Center;
+padding: 1rem;
+.button{
+  transition : all 0.3s ease;
+  width: 9rem;
+  background-color: #20262F;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  font-weight: 400;
+}
+.button:active{
+  background-color: orange;
+}
+.button:focus{
+  background-color: orange;
+  transition : all 0.3s ease;
+}
+@media(max-width:888px){
+.button{
+  width:7rem;
+  font-size: 0.9rem;
+  transition : all 0.3s ease;
+  
+}
+}
 
-    
+@media(max-width:747px){
+  padding:0.5rem;
+  .button{
+    width: 6.7rem;
+    transition : all 0.3s ease;
+  }
+  }
+
+
+`
+const Residential = () => {
+
+  const {type} = useParams();
+
+  const flat = flats.filter((cur)=>cur.type===type);
+  console.log(flat)
+
   return (
+
+    <div>
+      
+
+
+
     <div style={{margin:"0px" , padding:'0px'}}>
-   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0'}} className='properties'>{place.toLocaleUpperCase()} PROPERTIES</p>
-   <SearchCategory />
+   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0'}} className='properties'>{type.toLocaleUpperCase} PROPERTIES</p>
+   
+   <Box>
+      <Buttons>
+        <Button>
+          <NavLink className='button-28 button' to="/property/Residential" >Residential</NavLink>
+        </Button>
+        <Button>
+          <NavLink  className='button-28 button' to="/property/Commercial" >Commercial</NavLink>
+        </Button>
+      </Buttons>
+    </Box>
+
+
     <PropertySection>
     <Wrapper>
-        {proptery.map((cur,index)=>{
+        {flat.map((cur,index)=>{
             return (
                 <Conatiner>
                     <IMageSection>
@@ -115,7 +183,8 @@ const Properties = () => {
     </PropertySection>
    
     </div>
+    </div>
   )
 }
 
-export default Properties
+export default Residential

@@ -1,6 +1,3 @@
-
-
-
 // const Wrapper = styled.section`
 // /* background-image: url('../imgs/grey.jpg'); */
 // background-color: #ffffff;
@@ -38,10 +35,8 @@
 //   display: none;
 // }
 
-
-
 // @media(max-width:1000px){
-//   .pc_slider{ 
+//   .pc_slider{
 //     display: none;
 
 //   }
@@ -58,7 +53,6 @@
 
 //   // Create array with 500 slides
 
-
 //   return (
 //     <Wrapper>
 //     <div style={{textAlign:'center'}}>
@@ -67,7 +61,6 @@
 //       </div>
 
 //       <div className='pc_slider'>
-
 
 //        {/* ------------------ */}
 
@@ -96,23 +89,14 @@
 //          <SwiperSlide className='swiper-sliderr'><ReviewsCards /></SwiperSlide>
 //          <SwiperSlide className='swiper-sliderr'><ReviewsCards /></SwiperSlide>
 
-
 //       </Swiper>
 //       </div>
 
 // </div>
 
-
-
 //       {/* ------------------*/}
 
-
-
-
-
-
 // <div className='mobile_slider'>
-
 
 //  <div style={{width:'100%'}}>
 
@@ -127,19 +111,18 @@
 // }
 //  export default Reviews
 
-
-
-import React from 'react';
-import { Autoplay, Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import styled from 'styled-components';
-import ReviewsCards from './ReviewsCards';
-import MobileReviews from './MobileReviews';
+import React from "react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import styled from "styled-components";
+import ReviewsCards from "./ReviewsCards";
+import MobileReviews from "./MobileReviews";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import reviews from "../data/reviews";
 
 const Wrapper = styled.section`
 background-color: #f9f9f9;
@@ -179,18 +162,19 @@ display :flex ;
 width :100% ;
 }
 
-`
+`;
 
 const Reviews = () => {
+  // const {name , dp , review} = reviews;
 
   return (
     <Wrapper>
-      <div style={{ textAlign: 'center' }}>
-        <p className='testimonial'>What over customer are saying</p>
+      <div style={{ textAlign: "center" }}>
+        <p className="testimonial">What Over Customer Are Saying</p>
         <p>Happy Customers</p>
       </div>
 
-      <div className='pc_slider'>
+      <div className="pc_slider">
         <Swiper
           slidesPerView={3} // Changed this from 3 to 4
           centeredSlides={false} // Changed this from true to false
@@ -203,24 +187,59 @@ const Reviews = () => {
           pagination={false}
           navigation={false}
           modules={[Autoplay, Pagination, Navigation]}
-          className="swiperr">
-          <SwiperSlide><ReviewsCards /></SwiperSlide>
-          <SwiperSlide><ReviewsCards /></SwiperSlide>
-          <SwiperSlide><ReviewsCards /></SwiperSlide>
-          <SwiperSlide><ReviewsCards /></SwiperSlide>
-          <SwiperSlide><ReviewsCards /></SwiperSlide>
-          <SwiperSlide><ReviewsCards /></SwiperSlide>
-          <SwiperSlide><ReviewsCards /></SwiperSlide>
+          className="swiperr"
+        >
+          <SwiperSlide>
+            <ReviewsCards
+              name={reviews[0].name}
+              dp={reviews[0].dp}
+              review={reviews[0].review}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ReviewsCards
+              name={reviews[1].name}
+              dp={reviews[1].dp}
+              review={reviews[1].review}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ReviewsCards
+              name={reviews[2].name}
+              dp={reviews[2].dp}
+              review={reviews[2].review}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ReviewsCards
+              name={reviews[0].name}
+              dp={reviews[0].dp}
+              review={reviews[0].review}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ReviewsCards
+              name={reviews[1].name}
+              dp={reviews[1].dp}
+              review={reviews[1].review}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <ReviewsCards
+              name={reviews[2].name}
+              dp={reviews[2].dp}
+              review={reviews[2].review}
+            />
+          </SwiperSlide>
         </Swiper>
-
       </div>
 
-      <div className='mobile_slider'>
-        <div style={{ width: '100%' }}>
+      <div className="mobile_slider">
+        <div style={{ width: "100%" }}>
           <MobileReviews />
         </div>
       </div>
-
     </Wrapper>
-  );}
-export default Reviews
+  );
+};
+export default Reviews;

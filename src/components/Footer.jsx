@@ -1,140 +1,164 @@
-
-import { NavLink } from 'react-router-dom';
-import { styled } from 'styled-components';
-import {BsInstagram , BsFacebook , BsTwitter } from 'react-icons/bs';
-import {BiLogoGmail} from 'react-icons/bi';
+import { NavLink } from "react-router-dom";
+import { styled } from "styled-components";
+import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
+import { AiFillYoutube } from "react-icons/ai";
+import GetinTouch from "./GetinTouch";
 
 const Wrapper = styled.section`
-box-shadow: white 0px 3px 8px;
-background-color: #20262F;
-
+background: #262626;
+display: flex;
+justify-content: center;
+width: 100%;
+color: white;
 .footerDiv{
+  padding: 1rem 0rem;;
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  gap: 1rem;
+}
+
+@media(max-width: 600px){
+  display: flex;
+  justify-content;
+  .footerDiv{
+      width: max-content;
+      display: block;
+}
+}
+`;
+
+const Container = styled.div`
+  display: flex;
   align-items: center;
-  width: 100%;
-  
-
-
-  .footer-div-sections{
-    display: block;
-    color: white;
-    
-    .footerlogo{
-      margin : 2rem;
-      height: 15rem;
-      filter: drop-shadow(0 0 0.75rem black);
+  .logo_div {
+    .footerlogo {
+      display: flex;
+      justify-content: start;
     }
-    .footer-links{
-      display: block;
-      text-decoration: none;
-      color: white;
-      margin: 1rem;
+    .text {
+      width: 14rem;
     }
-    .footer-icons{
-      display: block;
-      margin: 1rem;
-      font-size: 1.7rem;
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 1.5rem;
     }
   }
 
-}
-.copyright{
-  text-align: center;
-  color: white;
-  padding: 1rem;
-  font-size: 1rem;
-}
-
-// responsive -------------------------------------------------------------------
-
-@media(max-width:700px){
-  .footerDiv{
+  .quickLinks {
+    font-size: 0.8rem;
     display: block;
-    align-items: center;
+    text-align: center;
     width: 100%;
-    
-  
-  
-    .footer-div-sections{
-      display: flex;
+    .footer-links {
+      display: block;
       color: white;
-      justify-content: center;
-      
+      align-items: center;
+      text-decoration: none;
+
+      padding: 0.3rem 0rem;
     }
-}
+  }
 
-
-@media(max-width:636px){
-  .footerDiv{
-   
-  
-     .none{
+  @media (max-width: 920px) {
+    .none {
       display: none;
-     }
-}
+    }
+  }
 
-
-
-`
+  @media (max-width: 750px) {
+    .touch {
+      display: none;
+    }
+  }
+`;
 
 const Footer = () => {
-   
   return (
     <Wrapper>
-     <div className='footerDiv'>
-       
-       
-        <div className='footer-div-sections'>
-        <img alt="main-logo" src="../imgs/platinum.png" className='footerlogo' />
-        </div>
-       
-       
-       
-        <div className='footerDiv'>
-         <div className="footer-div-sections none">
-            
-            <NavLink className="footer-links" to='/'>Home</NavLink> 
-                       
-            <NavLink className="footer-links" to='/menu'>Menu</NavLink>
-        
-            <NavLink className="footer-links" to='/about'>About Us</NavLink>
-            
-            <NavLink className="footer-links" to='/contact'>Contact Us</NavLink>
-            
-        </div>
-
-
-
-        <div className="footer-div-sections">
-
-        <a href='https://www.instagram.com/' style={{color: "white"}}><BsInstagram className='footer-icons' /></a>
-        <a href='https://www.facebook.com/' style={{color: "white"}}>    <BsFacebook className='footer-icons'/> </a>
-        <a href='https://www.twitter.com/' style={{color: "white"}}>    <BsTwitter className='footer-icons'/> </a>
-        <a href='https://www.gmail.com/' style={{color: "white"}}>     <BiLogoGmail className='footer-icons'/></a>
-         
-        </div>
-       
-
-
-
-        <div className="footer-div-sections none">
-   
-                    <p>Call Us</p>
-                    <p> +11 2143 23423,</p>
-                    <p> +11 2143 23423,</p>
-                    <p> +11 2143 23423,</p>
-      
-        </div>
-        </div>
-
-
-
-  
-     </div>
-     <p className='copyright'>© 2023 Elevate ProEx. All rights reserved</p>
+      <div className="footerDiv">
+        {" "}
+        {/*  footer div starts */}
+        {/* --------------------------logo Links  text starts------------------------------ */}
+        <Container>
+          <div className="logo_div">
+            <img
+              alt="main-logo"
+              src="../imgs/platinum.png"
+              className="footerlogo"
+              style={{ height: "10rem" }}
+            />
+            <p className="text">
+              Elevate Proex,
+            Gurgaon Sector 36A
+            </p>
+            <div className="links">
+              <a href="https://www.instagram.com/" style={{ color: "white" }}>
+                <BsInstagram className="footer-icons" />
+              </a>
+              <a href="https://www.facebook.com/" style={{ color: "white" }}>
+                <BsFacebook className="footer-icons" />
+              </a>
+              <a href="https://www.twitter.com/" style={{ color: "white" }}>
+                <BsTwitter className="footer-icons" />
+              </a>
+              <a href="https://youtube.com/@ElevateProEx-kw1ir?si=ZYTT8hkm04XmTeDu" style={{ color: "white" }}>
+                <AiFillYoutube className="footer-icons" />
+              </a>
+            </div>
+          </div>
+        </Container>
+        {/* --------------------------logo  text starts------------------------------ */}
+        {/* --------------------------Quick Links  text starts------------------------------ */}
+        <Container>
+          <div className="quickLinks none">
+            <NavLink className="footer-links" to="/">
+              Home
+            </NavLink>
+            <NavLink className="footer-links" to="/menu">
+              Menu
+            </NavLink>
+            <NavLink className="footer-links" to="/about">
+              About Us
+            </NavLink>
+            <NavLink className="footer-links" to="/contact">
+              Contact Us
+            </NavLink>
+            <NavLink className="footer-links" to="/privacy_policy">
+              Privacy & Policy
+            </NavLink>
+            <NavLink className="footer-links" to="/terms_and_conditions">
+              Terms & Conditions
+            </NavLink>
+          </div>
+        </Container>
+        {/* --------------------------Quick Links  text starts------------------------------ */}
+        {/* --------------------------callus  text starts------------------------------ */}
+        <Container>
+          <div className="quickLinks">
+            <p>Contact Us</p>
+            <p> +91 999 199 8060</p>
+            <p> www.elevateproex.com</p>
+            <p> info@elevateproex.com</p>
+          </div>
+        </Container>
+        {/* --------------------------callus  text starts------------------------------ */}
+        {/* --------------------------GetinTouch  text starts------------------------------ */}
+        <Container>
+          <div className="touch">
+            <GetinTouch />
+          </div>
+        </Container>
+        {/* -------------------------- GetinTouch text starts------------------------------ */}
+      </div>
+      {/*  footer div ends */}
+      {/* -------------------------- copyright text starts------------------------------ */}
+      {/* <p style={{textAlign:"center" , fontSize:'0.6rem'}}>© 2023 Elevate ProEx. All rights reserved</p> */}
+      {/* -------------------------- copyright text ends------------------------------ */}
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
