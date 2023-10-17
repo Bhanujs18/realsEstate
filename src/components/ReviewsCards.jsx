@@ -3,17 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
   color: white;
-  background: #141e30; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #262626;
 
   border: 2px #20262f solid;
   background-size: cover;
@@ -35,7 +25,7 @@ const Wrapper = styled.section`
   @media (max-width: 1000px) {
     .text {
       text-align: justify;
-      color: white;
+      color: #E7E7E7 ;
     }
   }
 `;
@@ -50,7 +40,7 @@ const ReviewsCards = ({ name, dp, review }) => {
       <br />
       ⭐⭐⭐⭐⭐
       <div className="text">
-        <p style={{ fontStyle: "italic", fontWeight: "300" }}>{review}</p>
+        <p style={{ fontStyle: "italic", fontWeight: "300", textAlign:'center' }}>{review}</p>
       </div>
     </Wrapper>
   );

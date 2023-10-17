@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import styled from 'styled-components';
 import {ImCross} from "react-icons/im";
 import emailjs from '@emailjs/browser';
@@ -75,6 +75,7 @@ const Container = styled.form`
   .textarea{
     width: 17rem;
     border-radius: 8px;
+    padding-left: 0.4rem;
     outline: none;
   }
 `;
@@ -85,6 +86,7 @@ const Inputs = styled.input`
   border-radius: 8px;
   border: none;
   width: 17rem;
+  padding-left: 0.4rem;
   height: 3rem;
   color: #333333;
   border: 1px #333333 solid;
@@ -93,13 +95,21 @@ const Inputs = styled.input`
 `;
 
 
+
+
 const Form = ({close}) =>{
+ 
+  const [val , setVal] = useState("Send");
+  const [button , setButton] = useState(false);
 
   const form = useRef();
+ 
+  const call = (close) => (button)? setVal("Sent") : null ; 
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setButton(true)
     emailjs.sendForm('service_m50xlpo', 'template_3hauz8s', form.current, 'h9_41iGuM8KO1PFBo')
       .then((result) => {
           console.log(result.text);
@@ -107,6 +117,7 @@ const Form = ({close}) =>{
           console.log(error.text);
       });
   };
+
 
   return(
     <Wrapper>
@@ -116,12 +127,13 @@ const Form = ({close}) =>{
             <Container ref={form} onSubmit={sendEmail}>
               
               <div style={{ display: "block", width: "max-content" }}>
-                <Inputs type="text" placeholder="Name"  name="user_name" ></Inputs>
-                <Inputs type="text" placeholder="Mobile"  name="user_mobile" ></Inputs>
-                <Inputs type="email" placeholder="Email" name="user_email"></Inputs>
+                <Inputs required type="text" placeholder="Name"  name="user_name" ></Inputs>
+                <Inputs required type="text" placeholder="Mobile"  name="user_mobile" ></Inputs>
+                <Inputs required type="email" placeholder="Email" name="user_email"></Inputs>
                 <textarea
                   style={{ height: "5rem" }}
                   type="text"
+                  required
                   placeholder="Message..."
                   name="message"
                   className='textarea'
@@ -133,7 +145,7 @@ const Form = ({close}) =>{
                     width: "100%",
                   }}
                 >
-                <input className='button' type="submit" value="Send" />
+                <button  className={(val==="Send") ? "Send" : "Sent" } onClick={call}>{val}</button>
                 </div>
               </div>
             </Container>

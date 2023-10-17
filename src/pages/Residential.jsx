@@ -83,6 +83,10 @@ const Buttons = styled.div`
 display: flex;
 justify-content:center;
 
+@media(max-width: 373px){
+  display: flex;
+  flex-wrap: wrap;
+}
 `
 const Button = styled.div`
 display: flex;
@@ -138,7 +142,7 @@ const Residential = () => {
 
 
     <div style={{margin:"0px" , padding:'0px'}}>
-   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0'}} className='properties'>{type.toLocaleUpperCase} PROPERTIES</p>
+   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0' , color:'white'}} className='properties'>{type.toLocaleUpperCase} PROPERTIES</p>
    
    <Box>
       <Buttons>
@@ -147,6 +151,9 @@ const Residential = () => {
         </Button>
         <Button>
           <NavLink  className='button-28 button' to="/property/Commercial" >Commercial</NavLink>
+        </Button>
+        <Button>
+          <NavLink  className='button-28 button' to="/property/SCO" >SCO</NavLink>
         </Button>
       </Buttons>
     </Box>
@@ -157,10 +164,12 @@ const Residential = () => {
         {flat.map((cur,index)=>{
             return (
                 <Conatiner>
+                     <NavLink to={`/property-details/${cur.id}`}>
                     <IMageSection>
                           <IMage style={{position:"relative"}} src={cur.img} />
                           <p className='imgText'>{cur.type}</p>
                     </IMageSection>
+                    </NavLink>
                     <Content>
                     <div style={{display:'flex' , justifyContent:'space-between' , margin:"0px" , padding:'0px'}}>
                     <Price>{cur.name}</Price>

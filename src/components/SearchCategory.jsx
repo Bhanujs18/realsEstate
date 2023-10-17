@@ -10,10 +10,14 @@ padding: 0.5rem 0rem;
 `
 const Buttons = styled.div`
 display: grid;
-grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(4, 1fr);
 
 @media(max-width:747px){
   grid-template-columns: repeat(3, 1fr);
+  
+}
+@media(max-width:376px){
+  grid-template-columns: repeat(2, 1fr);
   
 }
 `
@@ -61,9 +65,7 @@ const SearchCategory = () => {
   return (
     <Wrapper>
       <Buttons>
-        <Button>
-          <NavLink className='button-28 button' to="/properties/all" >All</NavLink>
-        </Button>
+        
         <Button>
           <NavLink  className='button-28 button' to="/properties/gurgaon" >Gurgaon</NavLink>
         </Button>

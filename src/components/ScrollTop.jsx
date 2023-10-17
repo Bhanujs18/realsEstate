@@ -9,6 +9,7 @@ const Container = styled.div`
   top: 85%;
   z-index: 999;
   left: 90%;
+  cursor:pointer;
   transform: translateY(50%, -50%);
 
   .icons {

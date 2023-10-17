@@ -16,6 +16,7 @@ import reviews from "../data/reviews";
 const Wrapper = styled.section`
   .swiper {
     width: 90%;
+   
   }
 `;
 

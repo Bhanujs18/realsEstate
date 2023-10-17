@@ -125,23 +125,25 @@ import "swiper/css/navigation";
 import reviews from "../data/reviews";
 
 const Wrapper = styled.section`
-background-color: #f9f9f9;
+
 padding-top:3rem ;
 padding-bottom :3rem ;
 width :100% ;
-color :black;
+color :white;
+
 
 
 
 .testimonial{
 font-size :2.5rem ;
 text-align :center ;
-color :black ;
+color :#E7E7E7 ;
 margin :0rem ;
 font-weight: 700;
 }
 
 .pc_slider{
+  padding: 1rem;
 display :flex ;
 justify-content :center ;
 align-items :center ;

@@ -1,5 +1,5 @@
 const flats = [{
-    "id": 0,
+    "id": "0",
     "price": 65,
     "Location": "Rajiv Chowk",
     "name": "Elevate 1",
@@ -12,7 +12,7 @@ const flats = [{
     "place" : "delhi"      
 },
 {
-    "id": 1,
+    "id": "1",
     "price": 665,
     "Location": "X Beach",
     "name": "Elevate 2",
@@ -24,7 +24,7 @@ const flats = [{
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg", 
     "place" : "goa"   
 },{
-    "id": 2,
+    "id": "2",
     "price": 65,
     "Location": "xyz goa",
     "name": "Elevate 3",
@@ -36,7 +36,7 @@ const flats = [{
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
     "place" : "goa"  
 },{
-    "id": 3,
+    "id": "3",
     "price": 65,
     "Location": "Rajori",
     "name": "Elevate 4",
@@ -49,7 +49,7 @@ const flats = [{
     "place" : "delhi"  
     
 },{
-    "id": 4,
+    "id": "4",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate 5",
@@ -60,7 +60,7 @@ const flats = [{
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
 },{
-    "id": 5,
+    "id": "5",
     "price": 65,
     "Location": "Burj Khalifa",
     "name": "Elevate Flats",
@@ -73,7 +73,7 @@ const flats = [{
     "place" : "dubai" ,
     "type" : "Residential" 
 },{
-    "id": 6,
+    "id": "6",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate Flats",
@@ -85,7 +85,7 @@ const flats = [{
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",  
     "type" : "Residential"   
 },{
-    "id": 7,
+    "id": "7",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate Flats",
@@ -97,7 +97,7 @@ const flats = [{
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
     "type" : "Commercial"   
 },{
-    "id": 8,
+    "id": "8",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate Flats",
@@ -109,7 +109,7 @@ const flats = [{
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
     "place" : "gurgaon"  
 },{
-    "id": 9,
+    "id": "9",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate Flats",
@@ -120,7 +120,7 @@ const flats = [{
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
 },{
-    "id": 10,
+    "id":"10",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate Flats",
@@ -131,7 +131,7 @@ const flats = [{
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
 },{
-    "id": 11,
+    "id": "11",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate Flats",
@@ -142,7 +142,7 @@ const flats = [{
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
 },{
-    "id": 12,
+    "id": "12",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate Flats",
@@ -153,7 +153,7 @@ const flats = [{
     "imgs3" : "https://media.istockphoto.com/id/1393537665/photo/modern-townhouse-design.webp?b=1&s=170667a&w=0&k=20&c=vlUsVGOI_lm_cZUwwHZWeBL5RRfxYHExELD5vOGTwV8=",
     "imgs4" :  "https://kreatecube.com/usefull/Common/2/271.jpg",    
 },{
-    "id": 13,
+    "id": "13",
     "price": 65,
     "Location": "Gurgaon",
     "name": "Elevate Flats",

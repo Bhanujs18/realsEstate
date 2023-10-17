@@ -17,33 +17,33 @@ const Wrapper = styled.section`
   .container {
     width: 100%;
     height: 35rem;
+    position: relative;
     .img {
       height: 35rem;
       width: 100%;
-
-      position: relative;
+      
     }
     .box {
       position: absolute;
-      top: 50%;
+      top: 70%;
       display: flex;
       justify-content: center;
       z-index: 99;
       width: 100%;
       left: 50%;
-      transform: translate(-50%, 50%);
+      transform: translate(-50%, -50%);
       .tagline {
         text-align: center;
         width: 100%;
         text-transform: uppercase;
-        text-shadow: -15px 5px 20px black;
+        text-shadow:  2px 2px 2px black;
         color: white;
         letter-spacing: -0.05em;
         font-family: "Anton", Arial, sans-serif;
         user-select: none;
         text-transform: uppercase;
         font-size: 4rem;
-        -webkit-text-stroke: 0.2px black
+        // -webkit-text-stroke: 0.2px black
         margin:0;
         transition: all 0.25s ease-out;
       }
@@ -54,11 +54,7 @@ const Wrapper = styled.section`
         padding: 1rem 1.5rem;
         border-radius:9px;
         text-decoration: none;
-        background: #D84738;
-        
-
-
-    
+        background: #D84738;    
       }
     }
   }
@@ -69,12 +65,16 @@ const Wrapper = styled.section`
         height: 25rem;
       }
       .box {
-        top: 30%;
+        
         .tagline {
           font-size: 2.5rem;
         }
         .image {
           display: none;
+        }
+        .explore{
+          padding: 1rem;
+         font-size: 0.8rem;
         }
       }
     }
@@ -87,12 +87,15 @@ const Wrapper = styled.section`
         height: 21rem;
       }
       .box {
-        top: 30%;
+      
         .tagline {
           font-size: 1.4rem;
         }
         .image {
           display: none;
+        }
+        .explore{
+          padding: 0.7rem;
         }
       }
     }
@@ -131,20 +134,21 @@ const MainScreen = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img className="img" alt="img" src="../imgs/main1.jpeg" />
+            <img className="img" loading="lazy" alt="img" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367324/main2_jm9tjg.jpg" />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="img" alt="img" src="../imgs/main2.jpeg" />
+            <img className="img" loading="lazy" alt="img" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367324/main1_sxst0n.jpg" />
           </SwiperSlide>
           <SwiperSlide>
             <img
               className="img"
               alt="img"
-              src="https://assets.architecturaldigest.in/photos/60084b371dd783c692024f2e/master/w_1600%2Cc_limit/Mumbai-Lodha-World-One-towers-apartment-9.jpg"
+              loading="lazy"
+              src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367324/main3_g243yl.jpg"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <img className="img" alt="img" src="../imgs/main4.jpg" />
+            <img className="img" loading="lazy" alt="img" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367324/main4_nauq6o.jpg" />
           </SwiperSlide>
         </Swiper>
 

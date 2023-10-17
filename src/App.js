@@ -16,6 +16,8 @@ import UltimateGuide from './pages/Blogs/UltimateGuide';
 import Residential from './pages/Residential';
 import TermsandConditions from './pages/TermsandConditions';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import SingleProperty from './pages/SingleProperty';
+import EnquiryButton from './components/EnquiryButton';
 
 
 const App = () => {
@@ -36,9 +38,11 @@ const App = () => {
           <Route path='/property/:type' element={ <Residential />} />
           <Route path='/terms_and_conditions' element={ <TermsandConditions />} />
           <Route path='/privacy_policy' element={ <PrivacyPolicy />} />
+          <Route path='/property-details/:id' element={ <SingleProperty />} />
           <Route path='/*' element={ <Error />} />
         </Routes>
         <SocialMediaIcons />
+        <EnquiryButton />
         <ScrollTop />
        <Footer />
        

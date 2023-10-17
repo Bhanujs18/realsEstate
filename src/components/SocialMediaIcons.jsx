@@ -22,6 +22,10 @@ const Container = styled.div`
     padding: 0.3rem;
     height: 1.7rem;
   }
+
+@media(max-width:200px){
+  display:none;
+}
 `;
 
 const SocialMediaIcons = () => {
@@ -38,7 +42,7 @@ const SocialMediaIcons = () => {
         <NavLink   to="tel:+91-9991998060">
         <BiSolidPhoneCall
           className="icons"
-          style={{ color: "white", backgroundColor: "#20262F" }}
+          style={{ color: "white", backgroundColor: "#1D9BF0" }}
         />
         </NavLink> 
 

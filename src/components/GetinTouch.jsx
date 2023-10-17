@@ -10,24 +10,26 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
   padding: 1rem 1.4rem;
   border-radius: 13px;
 
-  width: 16rem;
-  height: 9rem;
+  width: 13rem;
+  height: 7rem;
 `;
 
 const Container = styled.div`
-  display: block;
+  display: flex;
+  justify-content:Center;
 `;
 
 const Inputs = styled.div`
   .inputs {
     display: block;
-    height: 3rem;
-    width: 15rem;
+    height: 2rem;
+    width: 13rem;
     margin: 1rem 0rem;
     border-radius: 7px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     outline: none;
     border: 1px black solid;
+    padding-left:0.4rem;
   }
 `;
 
@@ -42,9 +44,9 @@ const Button = styled.section`
     background-color: red;
     color: white;
     border: none;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 0.8rem 1.5rem;
+    padding: 0.5rem 1rem;
     box-shadow:
       rgba(0, 0, 0, 0.09) 0px 2px 1px,
       rgba(0, 0, 0, 0.09) 0px 4px 2px,
@@ -59,6 +61,7 @@ const GetinTouch = () => {
   return (
     <Wrapper>
       <Container>
+        <div style={{display:'block'}}>
         <Inputs>
           <input className="inputs" type="text" placeholder="Email"></input>
         </Inputs>
@@ -67,6 +70,7 @@ const GetinTouch = () => {
             Get Updates
           </NavLink>
         </Button>
+        </div>
       </Container>
     </Wrapper>
   );

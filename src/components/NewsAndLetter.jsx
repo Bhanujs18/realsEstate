@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
+color: #E7E7E7;
   .container {
     display: block;
     .heading {
@@ -18,7 +19,11 @@ const Wrapper = styled.section`
 
       gap: 2rem;
       .box {
+        background-color: black;
+        padding: 1rem;
+        border-radius: 15px;
         display: block;
+        color: #E7E7E7;
         width: 20rem;
         text-align: justify;
         .img {
@@ -68,7 +73,7 @@ const NewsAndLetter = () => {
     <Wrapper>
       <div className="container">
         <div className="heading">
-          <p className="head">News Letters</p>
+          <p className="head">Upcoming Launch</p>
         </div>
         <div
           style={{ display: "flex", width: "100%", justifyContent: "center" }}

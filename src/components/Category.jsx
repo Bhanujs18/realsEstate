@@ -6,9 +6,9 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
 
-  color: white;
+  color: #E7E7E7;
   // background-image: url('https://us.123rf.com/450wm/yesheyingchuk/yesheyingchuk2008/yesheyingchuk200800821/155143271-black-luxury-gold-background-golden-silver-polygon-banner-christmas-new-year-celebration-border.jpg?ver=6');
-  background-color: #20262f;
+   background-color: #010203;
 
   padding: 1rem 0rem;
   .container {
@@ -24,6 +24,7 @@ const Wrapper = styled.section`
     .buttons {
       display: flex;
       justify-content: Center;
+      flex-wrap: wrap;
       gap: 2rem;
       font-weight: 600;
       .button {
@@ -87,7 +88,7 @@ const Category = () => {
     <Wrapper>
       <div className="container">
         <div>
-          <p className="heading">Looking To Buy A New Property Or Sell !!!</p>
+          <p className="heading">Looking To Buy A New Property</p>
         </div>
 
         <div
@@ -103,7 +104,7 @@ const Category = () => {
             </div>
 
             <div className="button">
-              <NavLink className="link button-28" to="/properties/all">Others</NavLink>
+              <NavLink className="link button-28" to="/property/SCO">SCO</NavLink>
             </div>
           </div>
         </div>

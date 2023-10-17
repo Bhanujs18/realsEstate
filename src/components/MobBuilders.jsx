@@ -8,40 +8,36 @@ import "swiper/css/navigation";
 import organizations from "../data/Organizations";
 
 const Wrapper = styled.section`
-padding: 2rem 0rem;
-.heading {
-  font-size: 3rem;
-  text-align: center;
-  text-transform: uppercase;
-  color: #E7E7E7;
-  margin:0;
-  transition: all 0.3s ease;
-  font-weight: 700;
-}
-  .img {
-    background-color: white;
-    margin: 1rem 0rem;
-     padding: 0rem;
-    width: 8rem;
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.9) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    height: 8rem;
-    border-radius:50%;
+display: none;
+
+@media(max-width:950px){
+    display:block;
+    padding: 2rem 0rem;
+    .heading{
+        text-align:center;
+        font-size: 2rem;
+        color: white;
+        margin:0;
+    }
+    .img{
+        height: 6rem;
+        width: 6rem;
+        border-radius:50%;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.9) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
     }
-  @media (max-width: 950px) {
-display:none;
-  }
+}
 `;
 
-const Builders = () => {
+const MobBuilders = () => {
   return (
     <Wrapper>
-      <p className='heading'>Our associations</p>
-      <p style={{margin:'0' , color:'#E7E7E7' , textAlign:'center' , padding:'0.8rem' }}>WE DEAL WITH TOP RATED BUILDERS IN GURGAON</p>
+      <p className='heading'>OUR ASSOCIATIONS</p>
+      <p style={{margin:'0' , color:'white' , textAlign:'center' , padding:'0.6rem 0rem 1.4rem 0rem' }}>WE DEAL WITH TOP RATED BUILDERS IN GURGAON</p>
       <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <Swiper
-          slidesPerView={7}
+          slidesPerView={3}
           centeredSlides={true}
           loop={true}
           spaceBetween={30}
@@ -61,4 +57,4 @@ const Builders = () => {
   );
 };
 
-export default Builders;
+export default MobBuilders;

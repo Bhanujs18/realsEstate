@@ -18,9 +18,10 @@ const Container = styled.section`
     font-size: 3.5rem;
     text-align: center;
     text-transform: uppercase;
-    color: #5e5e5e;
+    color: #E7E7E7;
     transition: all 0.3s ease;
     font-weight: 700;
+    margin:0;
   }
 
   @media(max-width: 950px){
@@ -48,7 +49,7 @@ justify-content: center;
     height: 10rem;
     width: 10rem;
     border-radius:50%;
-
+background-color: white;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
@@ -85,7 +86,8 @@ const Organizations = () => {
   return (
     <Wrapper>
       <Container>
-        <p className="heading">OUR ORGANIZATIONS</p>
+        <p className="heading">OUR ASSOCIATIONS</p>
+        <p style={{  color:'white' , textAlign:'center' , padding:'1rem' }}>TOP RATED BUILDERS IN GURGAON</p>
         <Images>
           {organizations.map((cur, index) => (
             <img className="img" alt="associations" src={cur.img} key={index} />

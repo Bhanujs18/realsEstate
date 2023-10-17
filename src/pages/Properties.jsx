@@ -3,6 +3,8 @@ import { NavLink, useParams } from 'react-router-dom'
 import flats from '../data/Flats';
 import styled from 'styled-components';
 import SearchCategory from '../components/SearchCategory';
+import TrendingProperties from '../components/TrendingProperties';
+import Category from '../components/Category';
 
 const PropertySection = styled.div`
 display: flex;
@@ -19,7 +21,7 @@ width:100%;
 
 const Wrapper = styled.div`
 display:grid;
-grid-template-columns:repeat(4, 1fr);
+grid-template-columns:repeat(3, 1fr);
 gap: 2rem;
 padding: 2rem 0rem;
 margin:0;
@@ -81,18 +83,22 @@ const Properties = () => {
 
     
   return (
+   
     <div style={{margin:"0px" , padding:'0px'}}>
-   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0'}} className='properties'>{place.toLocaleUpperCase()} PROPERTIES</p>
+         <Category />
+   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0' , color:'white'}} className='properties'>{place.toLocaleUpperCase()} PROPERTIES</p>
    <SearchCategory />
     <PropertySection>
     <Wrapper>
         {proptery.map((cur,index)=>{
             return (
                 <Conatiner>
+                    <NavLink to={`/property-details/${cur.id}`}>
                     <IMageSection>
                           <IMage style={{position:"relative"}} src={cur.img} />
                           <p className='imgText'>{cur.type}</p>
                     </IMageSection>
+                    </NavLink>
                     <Content>
                     <div style={{display:'flex' , justifyContent:'space-between' , margin:"0px" , padding:'0px'}}>
                     <Price>{cur.name}</Price>
@@ -106,14 +112,16 @@ const Properties = () => {
                     
                     </Content>
                     <div style={{textDecoration:'none' , width:'100%' , textAlign:'center' , backgroundColor:'#20262F' , padding:"0.3rem 0rem"}}><NavLink to="tel:+91-9991998060" style={{color:'white' , textDecoration:'none'}}>BOOK NOW</NavLink></div>
-
+                 
                 </Conatiner>
                 
             )
         } )}
+        
     </Wrapper>
+    
     </PropertySection>
-   
+    <TrendingProperties />
     </div>
   )
 }

@@ -6,7 +6,8 @@ const Wrapper = styled.section`
   padding: 3rem 0rem;
   // background-image: url('../imgs/grey.jpg');
   background-size: cover;
-  color: #20262f;
+  // color: #20262f;
+  color: #E7E7E7;
   .container {
     display: block;
     .heading {
@@ -31,8 +32,8 @@ const Wrapper = styled.section`
       gap: 2rem;
       .box {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-        height: 10rem;
-        width: 17rem;
+        height: 9rem;
+        width: 15rem;
         border-radius: 15px;
         cursor: pointer;
 
@@ -93,16 +94,17 @@ const Wrapper = styled.section`
       }
     }
   }
-  @media (max-width: 671px) {
+  @media (max-width: 547px) {
+    padding: 0.6rem 0rem;
     .container {
+      margin:0;
       .heading {
         padding: 1rem;
       }
       .cities {
         grid-template-columns: repeat(1, 1fr);
         .box {
-          height: 12rem;
-          width: 19rem;
+         
           .img {
           }
         }
@@ -117,7 +119,7 @@ const TrendingLocations = () => {
       <div className="container">
         <div className="heading">
           <div style={{ display: "block" }}>
-            <p className="trend_heading">Trending Locations</p>
+            <p className="trend_heading">Discover New Properties</p>
             <p className="trend_tagline">
               Browse Locations From a List of Available Cities
             </p>
@@ -173,11 +175,11 @@ const TrendingLocations = () => {
             </NavLink>
           </div>
         </div>
-        <div
+        {/* <div
           style={{ display: "flex", justifyContent: "center", width: "100%" }}
         >
           <NavLink to='/properties/all' className="seeAllLocations">See All Locations</NavLink>
-        </div>
+        </div> */}
       </div>
     </Wrapper>
   );
