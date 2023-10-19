@@ -15,18 +15,6 @@ display: none;
     padding: 2rem 0rem;
     .heading{
         text-align:center;
-<<<<<<< HEAD
-        font-size: 1.5rem;
-        color: white;
-        margin:0;
-    }
-    .tagline{
-      font-size: 1rem;
-    }
-    .img{
-        height: 7rem;
-        width: 7rem;
-=======
         font-size: 2rem;
         color: white;
         margin:0;
@@ -34,7 +22,6 @@ display: none;
     .img{
         height: 6rem;
         width: 6rem;
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
         border-radius:50%;
         background-color: white;
         box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.9) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -47,11 +34,7 @@ const MobBuilders = () => {
   return (
     <Wrapper>
       <p className='heading'>OUR ASSOCIATIONS</p>
-<<<<<<< HEAD
-      <p className="tagline" style={{margin:'0' , color:'white' , textAlign:'center' , padding:'0.6rem 0rem 1.4rem 0rem' }}>WE DEAL WITH TOP RATED BUILDERS IN GURGAON</p>
-=======
       <p style={{margin:'0' , color:'white' , textAlign:'center' , padding:'0.6rem 0rem 1.4rem 0rem' }}>WE DEAL WITH TOP RATED BUILDERS IN GURGAON</p>
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
       <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <Swiper
           slidesPerView={3}

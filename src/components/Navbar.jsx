@@ -160,11 +160,10 @@ const NavBar = () => {
             style={{ textDecoration: "none" }}
             className="logodiv"
           >
-<<<<<<< HEAD
             <img className="navlogo" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697607862/ELEVATE_PROEX_6_lowvmo.png" alt="logo" />
-=======
-            <img className="navlogo" src="m.png" alt="logo" />
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
+
+           
+
           </NavLink>
         </div>
 

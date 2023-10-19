@@ -88,11 +88,7 @@ const Category = () => {
     <Wrapper>
       <div className="container">
         <div>
-<<<<<<< HEAD
           <p className="heading">LOOKING TO BUY A NEW PROPERTY</p>
-=======
-          <p className="heading">Looking To Buy A New Property</p>
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
         </div>
 
         <div

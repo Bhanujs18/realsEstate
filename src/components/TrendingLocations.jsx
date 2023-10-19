@@ -8,16 +8,12 @@ const Wrapper = styled.section`
   background-size: cover;
   // color: #20262f;
   color: #E7E7E7;
-<<<<<<< HEAD
-    text-transform: uppercase;
-=======
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
   .container {
     display: block;
     .heading {
       align-items: center;
       margin: 0rem 0rem;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       display: flex;
 
       justify-content: center;
@@ -26,9 +22,6 @@ const Wrapper = styled.section`
         font-size: 2rem;
         margin: 0;
         font-weight: 600;
-      }
-      .trend_tagline{
-        font-size: 1rem;
       }
     }
     .cities {
@@ -106,12 +99,6 @@ const Wrapper = styled.section`
     .container {
       margin:0;
       .heading {
-       .trend_heading{
-        font-size: 1.5rem;
-       }
-       .trend_tagline{
-        font-size: 1rem;
-       }
         padding: 1rem;
       }
       .cities {
@@ -132,11 +119,7 @@ const TrendingLocations = () => {
       <div className="container">
         <div className="heading">
           <div style={{ display: "block" }}>
-<<<<<<< HEAD
-            <p className="trend_heading">DISCOVER NEW PROPERTIES</p>
-=======
             <p className="trend_heading">Discover New Properties</p>
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
             <p className="trend_tagline">
               Browse Locations From a List of Available Cities
             </p>

@@ -37,15 +37,14 @@ const Wrapper = styled.section`
         width: 18rem;
         overflow: hidden;
        border-radius: 20px;
-<<<<<<< HEAD
+
         text-align:start;
         .p{
           text-align: justify;
         }
-=======
+
         text-align:justify;
         
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
         .img {
           height: 10rem;
           width: 18rem;
@@ -124,11 +123,11 @@ const Blogs = () => {
               />
               <div style={{padding:'1rem'}}>
               <p style={{fontSize:'1.3rem'}}><b> BEST PLACES TO BUY 2023</b> </p>
-<<<<<<< HEAD
+
               <p className="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam nisi explicabo quis corrupti et labore iusto eum aspernatur perspiciatis qui eaque unde ex nihil, consequatur vero? Vel, quae quasi?</p>
-=======
+
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam nisi explicabo quis corrupti et labore iusto eum aspernatur perspiciatis qui eaque unde ex nihil, consequatur vero? Vel, quae quasi?</p>
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
+
               </div>
               </NavLink>
             </div>
@@ -142,11 +141,10 @@ const Blogs = () => {
               />
                <div style={{padding:'1rem'}}>
               <p style={{fontSize:'1.3rem'}}><b> TOP REASONS TO BUY 2023</b> </p>
-<<<<<<< HEAD
               <p className="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam nisi explicabo quis corrupti et labore iusto eum aspernatur perspiciatis qui eaque unde ex nihil, consequatur vero? Vel, quae quasi?</p>
-=======
+
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam nisi explicabo quis corrupti et labore iusto eum aspernatur perspiciatis qui eaque unde ex nihil, consequatur vero? Vel, quae quasi?</p>
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
+
               </div>
               </NavLink>
             </div>
@@ -156,11 +154,11 @@ const Blogs = () => {
               <img className="img" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697221875/Screenshot_2023-10-12_195838_icvlut.png" alt="img" />
               <div style={{padding:'1rem'}}>
               <p style={{fontSize:'1.3rem'}}><b> ULTIMATE GUIDE TO BUY 2023</b> </p>
-<<<<<<< HEAD
+
               <p className="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam nisi explicabo quis corrupti et labore iusto eum aspernatur perspiciatis qui eaque unde ex nihil, consequatur vero? Vel, quae quasi?</p>
-=======
+
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsam nisi explicabo quis corrupti et labore iusto eum aspernatur perspiciatis qui eaque unde ex nihil, consequatur vero? Vel, quae quasi?</p>
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
+
               </div>
               </NavLink>
             </div>

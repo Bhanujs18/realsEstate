@@ -92,11 +92,7 @@ const Footer = () => {
           <div className="logo_div">
             <img
               alt="main-logo"
-<<<<<<< HEAD
               src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697658349/Untitled_design_14_i6wxel.png"
-=======
-              src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367325/platinum_bvok1a.png"
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
               className="footerlogo"
               style={{ height: "10rem" }}
             />

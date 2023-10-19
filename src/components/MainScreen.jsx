@@ -134,36 +134,21 @@ const MainScreen = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-<<<<<<< HEAD
             <img className="img" loading="lazy" alt="img" src="https://www.luxuryresidences.in/suncity-platinum-tower-mg-road-gurgaon/images/banner.webp" />
           </SwiperSlide>
           <SwiperSlide>
             <img className="img" loading="lazy" alt="img" src="https://images.squarespace-cdn.com/content/v1/549d41a3e4b003c6ce131926/1459026008753-HRSZH56H8MXGOWUONBV5/Shanghai-Web-212-20160120.jpg?format=1500w" />
-=======
-            <img className="img" loading="lazy" alt="img" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367324/main2_jm9tjg.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img className="img" loading="lazy" alt="img" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367324/main1_sxst0n.jpg" />
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
           </SwiperSlide>
           <SwiperSlide>
             <img
               className="img"
               alt="img"
               loading="lazy"
-<<<<<<< HEAD
               src="https://windows10spotlight.com/wp-content/uploads/2019/07/abf36aab2b05b64e54c1b3d368d62dc5.jpg"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img className="img" loading="lazy" alt="img" src="https://png.pngtree.com/background/20230425/original/pngtree-aerial-aerial-perspective-of-a-city-at-night-picture-image_2474396.jpg" />
-=======
-              src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367324/main3_g243yl.jpg"
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img className="img" loading="lazy" alt="img" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697367324/main4_nauq6o.jpg" />
->>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
           </SwiperSlide>
         </Swiper>
 
