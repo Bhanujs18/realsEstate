@@ -5,7 +5,7 @@ import Blogs from "../../components/Blogs";
 const Wrapper = styled.section`
 display: flex;
 justify-content:center;
-
+color: #E7E7E7 ;
 text-align:cenetr;
 
 @media(max-width:820px){
@@ -22,7 +22,7 @@ width:80%;
 `
 const Heading = styled.p`
 display: flex;
-color: black;
+color: #E7E7E7 ;
 font-weight: 700;
 padding: 0rem 3rem;
 font-size: 2.3rem;

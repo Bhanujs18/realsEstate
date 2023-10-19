@@ -83,6 +83,10 @@ const Buttons = styled.div`
 display: flex;
 justify-content:center;
 
+@media(max-width: 373px){
+  display: flex;
+  flex-wrap: wrap;
+}
 `
 const Button = styled.div`
 display: flex;
@@ -92,16 +96,18 @@ padding: 1rem;
 .button{
   transition : all 0.3s ease;
   width: 9rem;
-  background-color: #20262F;
-  color: white;
+  background-color: white;
+  color: black;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .button:active{
   background-color: orange;
+  color: white;
 }
 .button:focus{
   background-color: orange;
+  color: white;
   transition : all 0.3s ease;
 }
 @media(max-width:888px){
@@ -138,7 +144,7 @@ const Residential = () => {
 
 
     <div style={{margin:"0px" , padding:'0px'}}>
-   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0'}} className='properties'>{type.toLocaleUpperCase} PROPERTIES</p>
+   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0' , color:'white'}} className='properties'>{type.toLocaleUpperCase} PROPERTIES</p>
    
    <Box>
       <Buttons>
@@ -147,6 +153,9 @@ const Residential = () => {
         </Button>
         <Button>
           <NavLink  className='button-28 button' to="/property/Commercial" >Commercial</NavLink>
+        </Button>
+        <Button>
+          <NavLink  className='button-28 button' to="/property/SCO" >SCO</NavLink>
         </Button>
       </Buttons>
     </Box>
@@ -157,10 +166,12 @@ const Residential = () => {
         {flat.map((cur,index)=>{
             return (
                 <Conatiner>
+                     <NavLink to={`/property-details/${cur.id}`}>
                     <IMageSection>
                           <IMage style={{position:"relative"}} src={cur.img} />
                           <p className='imgText'>{cur.type}</p>
                     </IMageSection>
+                    </NavLink>
                     <Content>
                     <div style={{display:'flex' , justifyContent:'space-between' , margin:"0px" , padding:'0px'}}>
                     <Price>{cur.name}</Price>

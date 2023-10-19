@@ -7,7 +7,7 @@ import CertificatesSlider from "./CertificatesSlider";
 const Wrapper = styled.section`
 // background-image: url('https://t3.ftcdn.net/jpg/03/48/06/98/360_F_348069838_cWdfRHqvslRsmqp3M2Wtto3lqEA1AFfd.jpg');
 padding: 2rem 0rem;
-background-color: #20262F;
+background-color: #010203;
 .container{
    
     width: 100%;
@@ -20,7 +20,10 @@ background-color: #20262F;
        
        display: flex;
        justify-content: center;
-       border: 20px white solid;
+       border: 20px #E7E7E7  solid;
+       .size{
+        width:25rem;
+      }
        .img1{
         display: none;
       }
@@ -32,7 +35,7 @@ background-color: #20262F;
     .Content_div{
         padding: 1rem;
         display: flex;
-         background-color: #20262F;
+        background-color: #010203;
          width: 50%;
         justify-content: center;
         .heading{
@@ -41,7 +44,7 @@ background-color: #20262F;
       
             text-transform: uppercase;
             text-shadow: -15px 5px 20px black;
-            color: white;
+            color: #E7E7E7;
             letter-spacing: -0.05em;
             font-family: 'Anton', Arial, sans-serif;
             user-select: none;
@@ -63,11 +66,14 @@ background-color: #20262F;
        align-items: center;
        gap: 3rem;
         .img_div{
+          .size{
+            width: 25rem;
+          }
            display: flex;
            justify-content: center;
            
            .img{
-            width: 20rem;
+            width: 25rem;
            }
         }
         .Content_div{
@@ -110,21 +116,31 @@ background-color: #20262F;
 
 
 
-@media(max-width: 400px){
+@media(max-width: 420px){
     display: flex;
+    width: 100%;
     justify-content: center;
     .container{
+     
+      width: 100%;
         .img_div{
             display: flex;
-            width: 100%;
+           .size{
+            width:100%;
+           }
+            border:none;
            
             justify-content: center;
             .img{
+              background-color: green;
+              width: 100%;
               display: none;
             }
             .img1{
+              
+              width: 100%;
                display: flex;
-               height: 17rem;
+               height: 16rem;
             }
         }
     }
@@ -142,7 +158,7 @@ const Certificates = () => {
           </p>
         </div>
         <div className="img_div">
-          <div style={{ width: "25rem" }}>
+          <div className="size">
             <CertificatesSlider />
             <img
               className="img1"

@@ -5,7 +5,7 @@ import { AiFillYoutube } from "react-icons/ai";
 import GetinTouch from "./GetinTouch";
 
 const Wrapper = styled.section`
-background: #262626;
+background: #010203;
 display: flex;
 justify-content: center;
 width: 100%;
@@ -31,10 +31,12 @@ color: white;
 const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   .logo_div {
     .footerlogo {
       display: flex;
       justify-content: start;
+      
     }
     .text {
       width: 14rem;
@@ -48,9 +50,9 @@ const Container = styled.div`
   }
 
   .quickLinks {
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: block;
-    text-align: center;
+    text-align: start;
     width: 100%;
     .footer-links {
       display: block;
@@ -69,6 +71,9 @@ const Container = styled.div`
   }
 
   @media (max-width: 750px) {
+    .quickLinks{ 
+      text-align:center;
+    }
     .touch {
       display: none;
     }
@@ -77,6 +82,7 @@ const Container = styled.div`
 
 const Footer = () => {
   return (
+    <div style={{background: "black" }}>
     <Wrapper>
       <div className="footerDiv">
         {" "}
@@ -86,14 +92,11 @@ const Footer = () => {
           <div className="logo_div">
             <img
               alt="main-logo"
-              src="../imgs/platinum.png"
+              src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697658349/Untitled_design_14_i6wxel.png"
               className="footerlogo"
               style={{ height: "10rem" }}
             />
-            <p className="text">
-              Elevate Proex,
-            Gurgaon Sector 36A
-            </p>
+           
             <div className="links">
               <a href="https://www.instagram.com/" style={{ color: "white" }}>
                 <BsInstagram className="footer-icons" />
@@ -138,10 +141,14 @@ const Footer = () => {
         {/* --------------------------callus  text starts------------------------------ */}
         <Container>
           <div className="quickLinks">
-            <p>Contact Us</p>
+            <p style={{fontSize:"1.2rem"}}>Contact Us</p>
             <p> +91 999 199 8060</p>
             <p> www.elevateproex.com</p>
             <p> info@elevateproex.com</p>
+            <p className="text">
+              Elevate Proex,
+            Gurgaon Sector 36A
+            </p>
           </div>
         </Container>
         {/* --------------------------callus  text starts------------------------------ */}
@@ -154,10 +161,12 @@ const Footer = () => {
         {/* -------------------------- GetinTouch text starts------------------------------ */}
       </div>
       {/*  footer div ends */}
-      {/* -------------------------- copyright text starts------------------------------ */}
-      {/* <p style={{textAlign:"center" , fontSize:'0.6rem'}}>© 2023 Elevate ProEx. All rights reserved</p> */}
-      {/* -------------------------- copyright text ends------------------------------ */}
+      
     </Wrapper>
+{/* -------------------------- copyright text starts------------------------------ */}
+       <p style={{textAlign:"center" , fontSize:'0.8rem' , color:'white' , padding:"0.3rem 0rem"}}>© 2023 Elevate ProEx. All rights reserved</p> 
+      {/* -------------------------- copyright text ends------------------------------ */}
+    </div>
   );
 };
 

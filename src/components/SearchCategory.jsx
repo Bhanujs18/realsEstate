@@ -10,9 +10,13 @@ padding: 0.5rem 0rem;
 `
 const Buttons = styled.div`
 display: grid;
-grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(4, 1fr);
 
 @media(max-width:747px){
+  grid-template-columns: repeat(4, 1fr);
+  
+}
+@media(max-width:538px){
   grid-template-columns: repeat(3, 1fr);
   
 }
@@ -25,29 +29,30 @@ padding: 1rem;
 .button{
   transition : all 0.3s ease;
   width: 9rem;
-  background-color: #20262F;
-  color: white;
+  background-color: white;
+  color: black;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .button:active{
   background-color: orange;
 }
 .button:focus{
   background-color: orange;
+  color: white;
   transition : all 0.3s ease;
 }
 @media(max-width:888px){
 .button{
   width:7rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   transition : all 0.3s ease;
   
 }
 }
 
 @media(max-width:747px){
-  padding:0.5rem;
+  padding:0.4rem;
   .button{
     width: 6.7rem;
     transition : all 0.3s ease;
@@ -61,9 +66,7 @@ const SearchCategory = () => {
   return (
     <Wrapper>
       <Buttons>
-        <Button>
-          <NavLink className='button-28 button' to="/properties/all" >All</NavLink>
-        </Button>
+        
         <Button>
           <NavLink  className='button-28 button' to="/properties/gurgaon" >Gurgaon</NavLink>
         </Button>

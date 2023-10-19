@@ -125,23 +125,26 @@ import "swiper/css/navigation";
 import reviews from "../data/reviews";
 
 const Wrapper = styled.section`
-background-color: #f9f9f9;
+
 padding-top:3rem ;
 padding-bottom :3rem ;
 width :100% ;
-color :black;
+color :white;
+
 
 
 
 .testimonial{
-font-size :2.5rem ;
+font-size :1.9rem ;
 text-align :center ;
-color :black ;
+color :#E7E7E7 ;
 margin :0rem ;
 font-weight: 700;
+text-transform: uppercase;
 }
 
 .pc_slider{
+  padding: 1rem;
 display :flex ;
 justify-content :center ;
 align-items :center ;
@@ -162,6 +165,13 @@ display :flex ;
 width :100% ;
 }
 
+@media(max-width :1000px){
+  .testimonial{ 
+  font-size: 1.5rem;
+  
+  }
+  
+
 `;
 
 const Reviews = () => {
@@ -171,7 +181,7 @@ const Reviews = () => {
     <Wrapper>
       <div style={{ textAlign: "center" }}>
         <p className="testimonial">What Over Customer Are Saying</p>
-        <p>Happy Customers</p>
+        <p style={{fontSize:'1.1rem'}}>Happy Customers</p>
       </div>
 
       <div className="pc_slider">

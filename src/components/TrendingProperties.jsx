@@ -7,15 +7,17 @@ const Wrapper = styled.section`
   padding: 3rem 0rem;
   // background-image: url('../imgs/grey.jpg');
   background-size: cover;
-  color: #20262f;
+  // color: #20262f;
+  text-transform: uppercase;
   width: 100%;
+  color: #E7E7E7;
   .container {
     width: 100%;
     display: block;
     .heading {
       align-items: center;
       margin: 0rem 0rem;
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       display: flex;
       justify-content: center;
       text-align: center;
@@ -67,8 +69,10 @@ const Wrapper = styled.section`
       text-align: center;
       font-size: 1rem;
       border: 2px #20262f solid;
-      background-color: #20262f;
-      color: white;
+      // background-color: #20262f;
+      background-color: white;
+      color: black;
+     
       width: max-content;
       padding: 1.2rem 2rem;
       border-radius: 15px;
@@ -99,7 +103,11 @@ const Wrapper = styled.section`
   @media (max-width: 671px) {
     .container {
       .heading {
+        font-size: 1rem;
         padding: 1rem;
+        .trend_heading{
+          font-size: 1.5rem ;
+        }
       }
       .cities {
         grid-template-columns: repeat(1, 1fr);
@@ -114,9 +122,9 @@ const TrendingProperties = () => {
       <div className="container">
         <div className="heading">
           <div style={{ display: "block" }}>
-            <p className="trend_heading">Trending Properties</p>
+            <p className="trend_heading">Iconic Projects</p>
             <p className="trend_tagline">
-              Browse Locations From a List of Available Cities
+              Some Outstanding Flats With Premium Amenities
             </p>
           </div>
         </div>
@@ -192,7 +200,7 @@ const TrendingProperties = () => {
         <div
           style={{ display: "flex", justifyContent: "center", width: "100%" }}
         >
-            <NavLink to='/properties/all'  className="seeAllLocations">See All Locations</NavLink>
+            <NavLink to='/properties/all'  className="seeAllLocations">View More</NavLink>
         </div>
       </div>
     </Wrapper>

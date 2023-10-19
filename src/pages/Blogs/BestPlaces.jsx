@@ -7,7 +7,7 @@ display: flex;
 justify-content:center;
 
 text-align:cenetr;
-
+color: #E7E7E7 ;
 @media(max-width:820px){
   .line{
     display:none;
@@ -22,7 +22,7 @@ width:80%;
 `
 const Heading = styled.p`
 display: flex;
-color: black;
+color: #E7E7E7 ;
 font-weight: 700;
 padding: 0rem 3rem;
 font-size: 2.3rem;
@@ -42,6 +42,7 @@ border-radius:20px;
 const Content = styled.p`
 width:90%;
 text-align:justify;
+color: #E7E7E7 ;
 @media(max-width:820px){
   width:95%;
 }

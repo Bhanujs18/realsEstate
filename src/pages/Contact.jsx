@@ -33,11 +33,18 @@ const Heading = styled.p`
   padding: 0rem 3rem;
   font-size: 2.3rem;
   margin: 0;
+  
 `;
 const Container = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
+  .textarea{
+    width: 17rem;
+    border-radius: 8px;
+    padding-left: 0.4rem;
+    outline: none;
+  }
 `;
 const Inputs = styled.input`
   display: block;
@@ -46,6 +53,7 @@ const Inputs = styled.input`
   border-radius: 8px;
   border: none;
   width: 17rem;
+  padding-left: 0.4rem;
   height: 3rem;
   color: #333333;
   border: 1px #333333 solid;
@@ -91,12 +99,18 @@ const ContactPage = styled.div`
     padding: 2rem 0rem;
     font-weight: 700;
   }
+  @media(max-width:700px){
+    .heading{
+      font-size: 1.2rem;
+      padding: 1rem 0rem;
+    }
+  }
 `;
 
 const Contact = () => {
   return (
     <ContactPage>
-      <p className="heading">CONTACT US</p>
+      <p className="heading">REACH US</p>
       <UpperSection>
      
         <Wrapper>
@@ -106,11 +120,14 @@ const Contact = () => {
               <div style={{ display: "block", width: "max-content" }}>
                 <Inputs type="text" placeholder="Name"></Inputs>
                 <Inputs type="email" placeholder="Email"></Inputs>
-                <Inputs
+                <textarea
                   style={{ height: "5rem" }}
                   type="text"
                   placeholder="Message..."
-                ></Inputs>
+                  name="message"
+                  className='textarea'
+                ></textarea>
+              
                 <div
                   style={{
                     display: "flex",
@@ -125,7 +142,7 @@ const Contact = () => {
           </Form>
         </Wrapper>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224567.7202250566!2d76.82493166545629!3d28.423160295828595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1697138494016!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14036.695218827295!2d76.9774461!3d28.414012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d62ba75a883%3A0xf0cf341425dbb33f!2sSector%2036A%2C%20Gurugram%2C%20Haryana%20122004!5e0!3m2!1sen!2sin!4v1697360315180!5m2!1sen!2sin"
           width="600"
           height="450"
           title="map"

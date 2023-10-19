@@ -6,9 +6,9 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
 
-  color: white;
+  color: #E7E7E7;
   // background-image: url('https://us.123rf.com/450wm/yesheyingchuk/yesheyingchuk2008/yesheyingchuk200800821/155143271-black-luxury-gold-background-golden-silver-polygon-banner-christmas-new-year-celebration-border.jpg?ver=6');
-  background-color: #20262f;
+   background-color: #010203;
 
   padding: 1rem 0rem;
   .container {
@@ -24,6 +24,7 @@ const Wrapper = styled.section`
     .buttons {
       display: flex;
       justify-content: Center;
+      flex-wrap: wrap;
       gap: 2rem;
       font-weight: 600;
       .button {
@@ -36,7 +37,7 @@ const Wrapper = styled.section`
   @media (max-width: 932px) {
     .container {
       .heading {
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: 600;
       }
     }
@@ -45,7 +46,7 @@ const Wrapper = styled.section`
   @media (max-width: 652px) {
     .container {
       .heading {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 600;
       }
       .buttons {
@@ -64,7 +65,7 @@ const Wrapper = styled.section`
   @media (max-width: 450px) {
     .container {
       .heading {
-        font-size: 0.8rem;
+        
         font-weight: 600;
       }
       .buttons {
@@ -87,7 +88,7 @@ const Category = () => {
     <Wrapper>
       <div className="container">
         <div>
-          <p className="heading">Looking To Buy A New Property Or Sell !!!</p>
+          <p className="heading">LOOKING TO BUY A NEW PROPERTY</p>
         </div>
 
         <div
@@ -103,7 +104,7 @@ const Category = () => {
             </div>
 
             <div className="button">
-              <NavLink className="link button-28" to="/properties/all">Others</NavLink>
+              <NavLink className="link button-28" to="/property/SCO">SCO</NavLink>
             </div>
           </div>
         </div>

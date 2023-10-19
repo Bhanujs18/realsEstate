@@ -18,7 +18,7 @@ const Form = styled.form`
     rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border-radius: 15px;
-  background-color: white;
+  background-color: #E7E7E7;
 `;
 
 const Heading = styled.p`

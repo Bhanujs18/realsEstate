@@ -5,8 +5,8 @@ import styled from "styled-components";
 const Wrapper = styled.section`
   // background-image: url('https://t3.ftcdn.net/jpg/03/48/06/98/360_F_348069838_cWdfRHqvslRsmqp3M2Wtto3lqEA1AFfd.jpg');
   padding: 2rem 0rem;
-  background-color: #20262f;
-  color: white;
+  background-color: #010203;
+  color: #E7E7E7;
   .container {
     width: 100%;
     display: flex;
@@ -18,7 +18,7 @@ const Wrapper = styled.section`
       // background-color: #dbba00;
       justify-content: center;
       .img {
-        border: 15px solid #f2f2f2;
+        border: 15px solid #203A43;
         height: 22rem;
         width: 29rem;
       }
@@ -31,20 +31,20 @@ const Wrapper = styled.section`
 
         text-transform: uppercase;
         text-shadow: -15px 5px 20px black;
-        color: white;
+        color: #E7E7E7;
         letter-spacing: -0.05em;
         font-family: "Anton", Arial, sans-serif;
         user-select: none;
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 2rem;
         transition: all 0.25s ease-out;
       }
       .content {
         font-style: italic;
         display: flex;
         justify-content: center;
-        color: white;
-
+        color: #E7E7E7;
+        word-spacing: 6px;
         font-family: "Anton", Arial, sans-serif;
         user-select: none;
         line-height: 1.7;
@@ -54,11 +54,11 @@ const Wrapper = styled.section`
       }
       .button {
         text-decoration: none;
-        font-size: 1.2rem;
+        font-size: 1rem;
         background-color: white;
         border: 2px grey solid;
         color: #20262f;
-        padding: 0.8rem 1.8rem;
+        padding: 0.6rem 1.4rem;
       }
       .button:hover {
         background-color: grey;
@@ -84,7 +84,7 @@ const Wrapper = styled.section`
           text-align: justify;
           padding: 1rem;
           font-size: 1.1rem;
-          line-height: 1;
+          line-height: 1.3;
           font-weight: 600;
         }
       }
@@ -121,7 +121,7 @@ const Goal = () => {
           <div
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
-            <NavLink className="button" to='/about'>Read More.</NavLink>
+            <NavLink className="button" to='/about'>Read More</NavLink>
           </div>
         </div>
       </div>

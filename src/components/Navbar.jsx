@@ -17,17 +17,8 @@ const Wrapper = styled.section`
   display: block;
   // background-color: #1C3041;
   width: 100%;
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: #010203;
+
   .navbar {
     display: flex;
     gap: 1rem;
@@ -41,8 +32,8 @@ const Wrapper = styled.section`
       color: white;
       font-size: 1.5rem;
       .navlogo {
-        height: 3rem;
-        padding: 0.4rem;
+        height: 4rem;
+        padding: 0rem;
 
         filter: drop-shadow(0 0 0.75rem black);
       }
@@ -58,7 +49,7 @@ const Wrapper = styled.section`
       margin-right: 1.5rem;
       .navbar_link {
         color: white;
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 500;
         text-decoration: none;
       }
@@ -69,12 +60,12 @@ const Wrapper = styled.section`
     }
   }
 
-  @media (max-width: 895px) {
+  @media (max-width: 1018px) {
     .navbar {
       display: flex;
       .logodiv {
         .navlogo {
-          height: 3rem;
+          height: 3.6rem;
         }
       }
       .navbarlinks {
@@ -83,7 +74,7 @@ const Wrapper = styled.section`
       .mobmenu {
         display: block;
         text-shadow: none;
-        background-color: black;
+        background-color: #626F7A;
 
         position: fixed;
         gap: 2rem;
@@ -120,6 +111,29 @@ const Wrapper = styled.section`
       }
     }
   }
+
+  @media(max-width: 340px){
+    .navbar {
+      display: flex;
+      .logodiv {
+        .navlogo {
+          height: 2rem;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 200px){
+    .navbar {
+      display: flex;
+      .logodiv {
+        .navlogo {
+          height: 2rem;
+          width:5rem;
+        }
+      }
+    }
+  }
 `;
 
 const NavBar = () => {
@@ -146,7 +160,7 @@ const NavBar = () => {
             style={{ textDecoration: "none" }}
             className="logodiv"
           >
-            <img className="navlogo" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697264067/mainlogo_nbfx21.png" alt="logo" />
+            <img className="navlogo" src="https://res.cloudinary.com/dyqynjew8/image/upload/v1697607862/ELEVATE_PROEX_6_lowvmo.png" alt="logo" />
           </NavLink>
         </div>
 
@@ -181,13 +195,14 @@ const NavBar = () => {
             to="/contact"
             onClick={() => setIcon(true)}
           >
-            CONTACT
+            REACH US
           </NavLink>
           <NavLink
           to="tel:+91-9991998060"
             className="navbar_link"
+           
             onClick={() => setIcon(true)}
-            style={{ display: "flex", alignItems: "center", gap: "1rem" }}
+            style={{ display: "flex", alignItems: "center", gap: "1rem" , padding:'1.2rem'}}
           >
             <BsFillPhoneVibrateFill />
             +91-9991998060

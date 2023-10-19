@@ -9,19 +9,24 @@ import Form from "./Form";
 const Wrapper = styled.section`
   // background-image: url('https://media.istockphoto.com/id/1320306462/video/4k-abstract-luxury-black-grey-gradient-backgrounds-with-diagonal-golden-metallic-stripes.jpg?s=640x640&k=20&c=zwBGZfYlbYVMNcnJirViOlEOFHLkPJeg9z-HvfLr77Y=');
   background-size: cover;
-  background-color: #20262f;
+  background: #0F2027;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   // background: #0F2027;  /* fallback for old browsers */
   // background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
   // background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-  color: white;
-  font-size: 1.2rem;
+  color :#E7E7E7 ;
+  font-size: 1.1rem;
   background-repeat: no-repeat;
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
+  margin:0;
   .connectwithus {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
-    color: white;
+    color: #E7E7E7 ;
+    padding:0;
     font-weight: 600;
     margin: 0;
   }
@@ -35,7 +40,7 @@ const Wrapper = styled.section`
 
       font-size: 1rem;
       font-weight: 600;
-      background-color: white;
+      background-color: #E7E7E7 ;
       align-items: center;
       color: white;
       box-shadow:
@@ -45,13 +50,13 @@ const Wrapper = styled.section`
         rgba(0, 0, 0, 0.09) 0px 16px 8px,
         rgba(0, 0, 0, 0.09) 0px 32px 16px;
       gap: 1rem;
-      padding: 1rem;
+      padding: 0.3rem 0.7rem;
       cursor: pointer;
       align-items: center;
       text-align: center;
       border-radius: 18px;
       .icons {
-        font-size: 3rem;
+        font-size: 2rem;
         width: max-content;
         color: white;
       }
@@ -65,7 +70,7 @@ const Wrapper = styled.section`
   }
   @media (max-width: 672px) {
     .connectwithus {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
     .container {
       grid-template-columns: repeat(2, 1fr);
@@ -74,7 +79,7 @@ const Wrapper = styled.section`
   }
   @media (max-width: 450px) {
     .connectwithus {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
     .container {
       grid-template-columns: repeat(1, 1fr);
@@ -109,7 +114,7 @@ const close = () => setShowform(false);
           <div
             className="box"
             style={{
-              backgroundColor: "white",
+              backgroundColor: "#E7E7E7",
               border: "2px green solid",
               color: "green",
             }}
@@ -125,7 +130,7 @@ const close = () => setShowform(false);
           <div
             className="box"
             style={{
-              backgroundColor: "white",
+              backgroundColor: "#E7E7E7",
               border: "2px #2091EB solid",
               color: "#2091EB",
             }}
@@ -142,7 +147,7 @@ const close = () => setShowform(false);
           <div
             className="box"
             style={{
-              backgroundColor: "white",
+              backgroundColor: "#E7E7E7",
               border: "2px #E34033 solid",
               color: "#E34033",
               textDecoration:'none'
@@ -150,7 +155,7 @@ const close = () => setShowform(false);
           >
             <BiLogoGmail onClick={()=>setShowform(true)} className="icons" style={{ color: "#E34033" ,textDecoration:'none'}} />
 
-            <p onClick={()=>setShowform(true)}>Book An Site Visit</p>
+            <p onClick={()=>setShowform(true)}>Book A Site Visit</p>
             {showform ? <Form close={close} /> : null}
           </div>
           {/* </a> */}

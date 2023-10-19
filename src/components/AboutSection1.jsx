@@ -9,7 +9,7 @@ width:100%;
 const Container = styled.section`
   display: flex;
   width: 100%;
-  background-color: #20262f;
+  background-color: black;
   padding: 2rem 0rem;
   justify-content: center;
   gap: 1rem;
@@ -36,16 +36,18 @@ const Photo = styled.img`
 const Heading = styled.p`
   text-align: center;
   font-size: 2rem;
-  color: white;
+  color: #E8E6E7;
   font-weight: 700;
 `;
 const Content = styled.p`
   padding: 1rem;
   line-height: 1.3;
   font-weight: 300;
-  text-align: center;
+  text-align: justify;
+  line-height: 1.6;
+  word-spacing: 4px;
   font-style: italic;
-  color: white;
+  color: #E8E6E7;
 
   @media(max-width:800px){
     text-align:justify;

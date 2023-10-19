@@ -5,6 +5,7 @@ import styled from 'styled-components'
 const Wrapper = styled.section`
 display: flex;
 justify-content:Center;
+color: #E7E7E7;
 `
 
 const PrivacyPolicy = () => {
