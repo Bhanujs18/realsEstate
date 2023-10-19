@@ -18,7 +18,11 @@ const Wrapper = styled.section`
   // background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   color :#E7E7E7 ;
+<<<<<<< HEAD
   font-size: 1.1rem;
+=======
+  font-size: 1.2rem;
+>>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
   background-repeat: no-repeat;
   padding: 2rem 0rem;
   margin:0;
@@ -26,7 +30,10 @@ const Wrapper = styled.section`
     font-size: 2rem;
     text-align: center;
     color: #E7E7E7 ;
+<<<<<<< HEAD
     padding:0;
+=======
+>>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
     font-weight: 600;
     margin: 0;
   }

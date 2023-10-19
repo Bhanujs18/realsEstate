@@ -4,7 +4,11 @@ import flats from '../data/Flats';
 import styled from 'styled-components';
 import SearchCategory from '../components/SearchCategory';
 import TrendingProperties from '../components/TrendingProperties';
+<<<<<<< HEAD
 
+=======
+import Category from '../components/Category';
+>>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
 
 const PropertySection = styled.div`
 display: flex;
@@ -86,7 +90,11 @@ const Properties = () => {
   return (
    
     <div style={{margin:"0px" , padding:'0px'}}>
+<<<<<<< HEAD
        
+=======
+         <Category />
+>>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
    <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0' , color:'white'}} className='properties'>{place.toLocaleUpperCase()} PROPERTIES</p>
    <SearchCategory />
     <PropertySection>
@@ -112,7 +120,11 @@ const Properties = () => {
                     <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione dignissimos cumque excepturi id iure consequuntur vel </Desc>
                     
                     </Content>
+<<<<<<< HEAD
                     <div style={{textDecoration:'none' , width:'100%' , textAlign:'center' , backgroundColor:'black' , padding:"0.3rem 0rem"}}><NavLink to="tel:+91-9991998060" style={{color:'white' , textDecoration:'none'}}>BOOK NOW</NavLink></div>
+=======
+                    <div style={{textDecoration:'none' , width:'100%' , textAlign:'center' , backgroundColor:'#20262F' , padding:"0.3rem 0rem"}}><NavLink to="tel:+91-9991998060" style={{color:'white' , textDecoration:'none'}}>BOOK NOW</NavLink></div>
+>>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
                  
                 </Conatiner>
                 

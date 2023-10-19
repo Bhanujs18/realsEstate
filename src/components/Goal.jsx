@@ -44,7 +44,11 @@ const Wrapper = styled.section`
         display: flex;
         justify-content: center;
         color: #E7E7E7;
+<<<<<<< HEAD
         word-spacing: 6px;
+=======
+
+>>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
         font-family: "Anton", Arial, sans-serif;
         user-select: none;
         line-height: 1.7;

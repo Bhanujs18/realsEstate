@@ -8,7 +8,10 @@ const Wrapper = styled.section`
   // background-image: url('../imgs/grey.jpg');
   background-size: cover;
   // color: #20262f;
+<<<<<<< HEAD
   text-transform: uppercase;
+=======
+>>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
   width: 100%;
   color: #E7E7E7;
   .container {

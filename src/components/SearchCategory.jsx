@@ -20,6 +20,10 @@ grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(3, 1fr);
   
 }
+@media(max-width:376px){
+  grid-template-columns: repeat(2, 1fr);
+  
+}
 `
 const Button = styled.div`
 display: flex;
