@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
@@ -23,7 +23,7 @@ const Form = styled.form`
 
 const Heading = styled.p`
   display: flex;
-  color: #3D3D3D;
+  color: #010203;
   justify-content: Center;
   text-align: center;
   font-weight: 700;
@@ -50,16 +50,16 @@ const Container = styled.div`
   }
 `;
 
-const Submit = styled.button`
-  display: flex;
-  background-color: #20262F;
-  color: white;
-  border: none;
-  font-size: 1.1rem;
-  font-weight: 600;
-  padding: 0.8rem 1.5rem;
-  border-radius: 7px;
-`;
+// const Submit = styled.button`
+//   display: flex;
+//   background-color: #20262F;
+//   color: white;
+//   border: none;
+//   font-size: 1.1rem;
+//   font-weight: 600;
+//   padding: 0.8rem 1.5rem;
+//   border-radius: 7px;
+// `;
 
 const Content = styled.div`
   padding: 1rem 0rem;
@@ -68,7 +68,7 @@ const Content = styled.div`
   font-weight:400;
   display: flex;
   text-align: center;
-  color: black;
+  color: #010203;
   @media(max-width:450px){
     font-size: 0.9rem;
   }
@@ -93,7 +93,7 @@ const ServicesCard = ({Cur}) => {
                 width: "100%",
               }}
             >
-              <Submit><NavLink to="tel:+91-9991998060" style={{color:"white" , textDecoration:'none'}}>{Cur.button}</NavLink></Submit>
+              {/* <Submit><NavLink to="tel:+91-9991998060" style={{color:"white" , textDecoration:'none'}}>{Cur.button}</NavLink></Submit> */}
             </div>
           </div>
         </Container>

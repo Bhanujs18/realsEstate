@@ -140,6 +140,7 @@ text-align :center ;
 color :#E7E7E7 ;
 margin :0rem ;
 font-weight: 700;
+
 text-transform: uppercase;
 }
 
@@ -180,7 +181,7 @@ const Reviews = () => {
   return (
     <Wrapper>
       <div style={{ textAlign: "center" }}>
-        <p className="testimonial">What Over Customer Are Saying</p>
+        <p className="testimonial">What Our Customer Are Saying</p>
         <p style={{fontSize:'1.1rem'}}>Happy Customers</p>
       </div>
 

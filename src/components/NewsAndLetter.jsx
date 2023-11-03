@@ -15,12 +15,14 @@ color: #E7E7E7;
       }
     }
     .content {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      
+      display: flex;
+      justify-content: Center;
+      flex-wrap: wrap;
 
       gap: 2rem;
       .box {
-        background-color: black;
+        background-color: rgb(0,0,0,0.3);
         padding: 1rem;
         border-radius: 15px;
         display: block;
@@ -31,17 +33,15 @@ color: #E7E7E7;
           height: 12rem;
           width: 20rem;
         }
+        p{
+          font-style: italic;
+          font-size: 0.9rem;
+        }
       }
     }
   }
 
-  @media (max-width: 1050px) {
-    .container {
-      .content {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-  }
+
   @media (max-width: 716px) {
     .container {
       .heading{
@@ -50,7 +50,6 @@ color: #E7E7E7;
         }
       }
       .content {
-        grid-template-columns: repeat(1, 1fr);
         .box {
           display: block;
           width: 20rem;
@@ -61,7 +60,7 @@ color: #E7E7E7;
   @media (max-width: 390px) {
     .container {
       .content {
-        grid-template-columns: repeat(1, 1fr);
+      
         .box {
           display: block;
           width: 18rem;

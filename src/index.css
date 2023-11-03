@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap');
+*
+{
   font-family: proxima-nova, sans-serif;
 font-style: normal;
 
@@ -50,9 +52,9 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF);  */
 .button-28 {
   border-radius: 15px;
   text-decoration : none;
-  background-color: rgb(255, 255, 255);
+  background-color: #D84738;
   box-sizing: border-box;
-  color: #000000;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -61,7 +63,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF);  */
   padding: 0.7rem 1.3rem;
   text-align: center;
   text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  transition: all 0.3s ease;
   touch-action: manipulation;
 
   will-change: transform;
@@ -69,8 +71,9 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF);  */
 
 
 .button-28:hover {
-  color: #000000;
+  color: #D84738;
   background-color: #ffffff;
+  transition: all 0.3s ease;
   box-shadow: rgba(255, 255, 255, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 
@@ -99,35 +102,38 @@ font-size: 2rem;
   
 }
 
-.div{
-  display: block;
-  transition: all 0.3s ease;
-}
+
 .small{
   width: 10rem;
   height: 5rem;
+  padding: 0.5rem;
   transition: all 0.3s ease;
   display: block;
+  @media(max-width: 600px){
+    display: flex;
+    justify-content: center;
+  }
   @media(max-width:627px){
     width: 5rem;
   height: 3rem;
+  }
+  @media(max-width:418px){
+    width: 3.4rem;
+  height: 2.5rem;
   }
 }
 
 .flat_details{
   padding:1rem;
-
-  @media(max-width:700px){
-  padding: 0;
-  }
   @media(max-width:627px){
     width: 92%;
     padding: 1rem;
   }
 }
 .flat{
+  
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   @media(max-width:700px){
     grid-template-columns: repeat(2, 1fr);
   }
@@ -178,15 +184,14 @@ text-align: justify;
 }
 
 .colorbtn{
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #D84738;  /* fallback for old browsers */
+ border-radius: 8px;
 
 }
 
 .colorbtn2{
-background-color: orange;
+background-color: #D84738;
+border-radius: 8px;
 }
 
 
@@ -214,3 +219,28 @@ background-color: orange;
     }
   
 }
+
+.red_box{
+
+color: rgb(255, 255, 255);
+}
+
+.green-box{
+  background-color: #d62828;
+  color: white;
+}
+
+.blue-box{
+  background: #2193b0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+
+}
+.white-box{
+  background: #bdc3c7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color: white;
+}
+

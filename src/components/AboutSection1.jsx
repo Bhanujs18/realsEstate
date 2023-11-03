@@ -42,10 +42,11 @@ const Heading = styled.p`
 const Content = styled.p`
   padding: 1rem;
   line-height: 1.3;
+  font-style: italic;
   font-weight: 300;
   text-align: justify;
   line-height: 1.6;
-  word-spacing: 4px;
+  word-spacing: 2px;
   font-style: italic;
   color: #E8E6E7;
 
@@ -71,7 +72,7 @@ const AboutSection1 = () => {
         <Section>
           <Heading>Who We Are?</Heading>
           <Content>
-          <p>Elevate ProEx is your trusted partner for buying, occupying, and investing in real estate assets. Our journey began in 2019 with a vision to offer the best and most lucrative investment opportunities across India. Our name reflects our commitment to delivering exclusive, high-quality services that enhance the financial well-being of our clients.</p>
+          <p style={{fontStyle:'italic'}}>Elevate ProEx is your trusted partner for buying, occupying, and investing in real estate assets. Our journey began in 2019 with a vision to offer the best and most lucrative investment opportunities across India. Our name reflects our commitment to delivering exclusive, high-quality services that enhance the financial well-being of our clients.</p>
           </Content>
         </Section>
         

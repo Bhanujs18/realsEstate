@@ -35,6 +35,7 @@ const FormSection = styled.div`
   .cross{
     position:absolute;
     top:5%;
+    color: red;
     right:5%;
   }
 `;

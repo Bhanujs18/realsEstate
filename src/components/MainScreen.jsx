@@ -25,7 +25,7 @@ const Wrapper = styled.section`
     }
     .box {
       position: absolute;
-      top: 70%;
+      top: 60%;
       display: flex;
       justify-content: center;
       z-index: 99;
@@ -35,11 +35,12 @@ const Wrapper = styled.section`
       .tagline {
         text-align: center;
         width: 100%;
+        font-family: 'Josefin Sans', sans-serif;
         text-transform: uppercase;
         text-shadow:  2px 2px 2px black;
         color: white;
         letter-spacing: -0.05em;
-        font-family: "Anton", Arial, sans-serif;
+        font-weight: 400;
         user-select: none;
         text-transform: uppercase;
         font-size: 4rem;
@@ -53,8 +54,16 @@ const Wrapper = styled.section`
         justify-content: center;
         padding: 1rem 1.5rem;
         border-radius:9px;
+        margin-top: 2rem;
         text-decoration: none;
         background: #D84738;    
+        transition: all 0.3s ease;
+        border: 2px #D84738 solid;
+      }
+      .explore:hover{
+           background-color: white;
+           color: #D84738;
+           transition: all 0.3s ease;
       }
     }
   }
@@ -89,7 +98,7 @@ const Wrapper = styled.section`
       .box {
       
         .tagline {
-          font-size: 1.4rem;
+          font-size: 1.7rem;
         }
         .image {
           display: none;

@@ -29,7 +29,7 @@ padding: 2rem 0rem;
     border-radius:50%;
 
     }
-  @media (max-width: 950px) {
+  @media (max-width: 850px) {
 display:none;
   }
 `;

@@ -39,15 +39,17 @@ const Container = styled.section`
 `;
 
 const Images = styled.div`
-display: grid;
-grid-template-columns: repeat(5 , 1fr);
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 gap: 2rem;
+transition: all 0.3s ease;
 padding: 0rem 1rem;
 justify-content: center;
 
 .img{
-    height: 10rem;
-    width: 10rem;
+    height: 7rem;
+    width: 7rem;
     border-radius:50%;
 background-color: white;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -62,7 +64,6 @@ background-color: white;
 }
 @media(max-width: 800px){
   
-grid-template-columns: repeat(3 , 1fr);
   .img{
     height: 8rem;
     transition: all 0.3s ease;
@@ -71,7 +72,6 @@ grid-template-columns: repeat(3 , 1fr);
 }
 @media(max-width: 560px){
   gap: 1rem;
-  grid-template-columns: repeat(3 , 1fr);
     .img{
       height: 6rem;
       transition: all 0.3s ease;

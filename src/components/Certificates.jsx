@@ -20,7 +20,7 @@ background-color: #010203;
        
        display: flex;
        justify-content: center;
-       border: 20px #E7E7E7  solid;
+       border: 20px #284A59  solid;
        .size{
         width:25rem;
       }
@@ -41,7 +41,7 @@ background-color: #010203;
         .heading{
             display: flex;
             justify-content: center;
-      
+                text-align:center;
             text-transform: uppercase;
             text-shadow: -15px 5px 20px black;
             color: #E7E7E7;
@@ -153,8 +153,7 @@ const Certificates = () => {
       <div className="container">
         <div className="Content_div">
           <p className="heading">
-            Properties <br />
-            Certificates
+          Rewards and Recognition
           </p>
         </div>
         <div className="img_div">

@@ -10,7 +10,7 @@ import organizations from "../data/Organizations";
 const Wrapper = styled.section`
 display: none;
 
-@media(max-width:950px){
+@media(max-width:850px){
     display:block;
     padding: 2rem 0rem;
     .heading{
@@ -34,7 +34,7 @@ const MobBuilders = () => {
   return (
     <Wrapper>
       <p className='heading'>OUR ASSOCIATIONS</p>
-      <p style={{margin:'0' , color:'white' , textAlign:'center' , padding:'0.6rem 0rem 1.4rem 0rem' }}>WE DEAL WITH TOP RATED BUILDERS IN GURGAON</p>
+      <p style={{width:'97%',margin:'0' , color:'white' , textAlign:'center' , padding:'0.6rem 0rem 1.4rem 0rem' }}>WE DEAL WITH TOP RATED BUILDERS IN GURGAON</p>
       <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <Swiper
           slidesPerView={3}

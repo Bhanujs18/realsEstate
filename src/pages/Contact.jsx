@@ -5,13 +5,18 @@ import ConnectWithUs from "../components/ConnectWithUs";
 
 const Wrapper = styled.section`
   display: flex;
+
   // background-color: #20262F
   padding: 2rem 0rem;
-  justify-content: center;
-  width: !00%;
+  justify-content: end;
+  width: 80%;
   margin: 0;
 
   paddinf: 0;
+
+  @media(max-width: 600px){
+     justify-content: center;
+  }
 `;
 const Form = styled.form`
   display: block;
@@ -23,17 +28,23 @@ const Form = styled.form`
     rgba(0, 0, 0, 0.09) 0px 16px 8px,
     rgba(0, 0, 0, 0.09) 0px 32px 16px;
   border-radius: 15px;
-  background: #20262F;
+  background: rgb(1,2,3,0.6);
 `;
 
 const Heading = styled.p`
   display: flex;
   color: white;
   font-weight: 700;
-  padding: 0rem 3rem;
+  padding: 0rem;
+   justify-content:Center;
   font-size: 2.3rem;
+  width:100%;
   margin: 0;
-  
+  @media(max-width: 500px){
+    font-size: 1.5rem;
+    justify-content:Center;
+    text-align:Center;
+  }
 `;
 const Container = styled.div`
   align-items: center;
@@ -79,20 +90,24 @@ const Submit = styled.button`
 
 const UpperSection = styled.section`
   display: flex;
-  justify-content: space-around;
-  
-padding: 1rem 0rem 0rem 0rem;
+ justify-content: center;
+ background-image: url('https://res.cloudinary.com/dyqynjew8/image/upload/v1698563582/Screenshot_2023-10-29_124251_vrnbym.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+padding: 1rem 0rem 1rem 0rem;
 
 @media(max-width:700px){
-  display:block;
+  
 }
 `;
 
 const ContactPage = styled.div`
+
+overflow:hidden;
   .heading {
     font-size: 2rem;
     text-align: center;
-    background-color: #20262f;
+
     text-transform: uppercase;
     color: white;
     margin: 0;
@@ -110,14 +125,17 @@ const ContactPage = styled.div`
 const Contact = () => {
   return (
     <ContactPage>
-      <p className="heading">REACH US</p>
+      {/* <p className="heading">REACH US</p> */}
+     
       <UpperSection>
      
         <Wrapper>
           <Form>
-            <Heading>Get in Touch</Heading>
+            
             <Container>
+           
               <div style={{ display: "block", width: "max-content" }}>
+              <Heading>Get in Touch</Heading>
                 <Inputs type="text" placeholder="Name"></Inputs>
                 <Inputs type="email" placeholder="Email"></Inputs>
                 <textarea
@@ -141,17 +159,18 @@ const Contact = () => {
             </Container>
           </Form>
         </Wrapper>
-        <iframe
+      
+      </UpperSection>
+      <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14036.695218827295!2d76.9774461!3d28.414012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d3d62ba75a883%3A0xf0cf341425dbb33f!2sSector%2036A%2C%20Gurugram%2C%20Haryana%20122004!5e0!3m2!1sen!2sin!4v1697360315180!5m2!1sen!2sin"
-          width="600"
-          height="450"
+          height="250"
           title="map"
+          width="100%"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          className="map"
+          style={{backgroundColor:'#274957'}}
         ></iframe>
-      </UpperSection>
       <ConnectWithUs />
     </ContactPage>
   );

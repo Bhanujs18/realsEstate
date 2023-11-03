@@ -64,7 +64,7 @@ const Wrapper = styled.section`
       text-align: center;
       font-size: 1rem;
       border: 2px solid #20262f;
-      background-color: #20262f;
+      background-color: black;
       color: white;
       width: max-content;
       padding: 1.2rem 2rem;

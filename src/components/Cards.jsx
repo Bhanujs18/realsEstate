@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.div`
-  color: white;
+  color: #E7E7E7;
   font-weight: 400;
   @media (max-width: 450px) {
     font-size: 0.8rem;
@@ -10,27 +10,22 @@ const Section = styled.div`
 `;
 
 const CardSection = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+display: flex;
+justify-content: Center;
+flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
+  
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 1040px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  @media (max-width: 800px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @media (max-width: 545px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  
 `;
 
 const CardContainer = styled.div`
   position: relative;
   height: 15rem;
+
   width: 15rem;
   overflow: hidden;
   background-color: #20262f;
@@ -40,6 +35,7 @@ const CardContainer = styled.div`
   @media (max-width: 545px) {
     height: 11rem;
     width: 11rem;
+    border: 2px transparent  solid;
   }
 
   @media (max-width: 400px) {
@@ -83,16 +79,16 @@ const Cards = () => {
             <CardData>
               <p>
                 {" "}
-                <strong>Beachfront Bungalow</strong>
+                <strong>DLF Garden City Enclave</strong>
                 <br />
-                Price: Rs 250,000/-
+                Price: Rs 1.51/-*
                 <br />
-                1 King Bed <br />
-                Ocean View
+                2/3BHK <br />
+                Under Construction
               </p>
             </CardData>
             <Image
-              src="https://myfancyhouse.com/wp-content/uploads/2022/12/Investing-In-Luxury-Apartments-800x530.jpg"
+              src="https://www.dlfhomes.co.in/dlf-gardencity-enclave-floors-sector-93-gurgaon/images/banner.webp"
               alt="Card"
             />
           </CardContainer>
@@ -100,16 +96,17 @@ const Cards = () => {
             <CardData>
               <p>
                 {" "}
-                <strong>Cozy Cabin</strong>
+                <strong>M3M Route 65 Mall</strong>
                 <br />
-                Price: Rs 150,000/-
+                Price: Rs 750,000/-
                 <br />
-                1 Queen Bed <br />
-                Fireplace Included
+                250 - 1000 Sq. Ft.
+                 <br />
+                 Under Construction
               </p>
             </CardData>
             <Image
-              src="https://img.freepik.com/premium-photo/living-room-apartments-rent_865967-329866.jpg"
+              src="https://www.larisarealtech.com/wp-content/uploads/2022/08/M3M-Route-65-Gallery-Image-1-1-1-1.jpg"
               alt="Card"
             />
           </CardContainer>

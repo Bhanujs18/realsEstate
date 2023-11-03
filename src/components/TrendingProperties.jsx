@@ -5,8 +5,9 @@ import { NavLink } from "react-router-dom";
 
 const Wrapper = styled.section`
   padding: 3rem 0rem;
-  // background-image: url('../imgs/grey.jpg');
+   background-image: url('https://afar.brightspotcdn.com/dims4/default/1edd618/2147483647/strip/true/crop/1674x837+0+52/resize/1440x720!/quality/90/?url=https%3A%2F%2Fafar-media-production-web.s3.us-west-2.amazonaws.com%2Fbrightspot%2F52%2F5b%2F41a5b5de33910d8077410fe7de20%2Foriginal-heydar-aliyev-centre-helene-binet-baku.jpg');
   background-size: cover;
+
   // color: #20262f;
 <<<<<<< HEAD
   text-transform: uppercase;
@@ -14,9 +15,13 @@ const Wrapper = styled.section`
 >>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
   width: 100%;
   color: #E7E7E7;
+@media(max-width: 600px){
+  background-position: center;
+}
   .container {
     width: 100%;
     display: block;
+  
     .heading {
       align-items: center;
       margin: 0rem 0rem;
@@ -71,13 +76,13 @@ const Wrapper = styled.section`
       font-weight: 600;
       text-align: center;
       font-size: 1rem;
-      border: 2px #20262f solid;
+      border: 2px #D84738 solid;
       // background-color: #20262f;
-      background-color: white;
-      color: black;
-     
+      background-color: #D84738;
+      color: white;
+     transition: all 0.3s ease;
       width: max-content;
-      padding: 1.2rem 2rem;
+      padding: 1rem 2rem;
       border-radius: 15px;
       cursor: pointer;
       text-decoration:none;
@@ -85,7 +90,7 @@ const Wrapper = styled.section`
     }
     .seeAllLocations:hover {
       background-color: white;
-      color: black;
+      color: #D84738;
     }
   }
   @media (max-width: 1340px) {

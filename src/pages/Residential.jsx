@@ -96,18 +96,23 @@ padding: 1rem;
 .button{
   transition : all 0.3s ease;
   width: 9rem;
-  background-color: white;
-  color: black;
+  background-color: #D84738;
+  color: white;
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   font-weight: 500;
 }
 .button:active{
-  background-color: orange;
-  color: white;
+  background-color: white;
+  color: #D84738;
+}
+.button:hover{
+  background-color: white;
+  color: #D84738;
+  transition : all 0.3s ease;
 }
 .button:focus{
-  background-color: orange;
-  color: white;
+  background-color: white;
+  color: #D84738;
   transition : all 0.3s ease;
 }
 @media(max-width:888px){

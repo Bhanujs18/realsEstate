@@ -12,6 +12,9 @@ const Container = styled.div`
   top: 30%;
   z-index: 101;
   right: 0%;
+  overflow:hidden;
+  background-color: red;
+  border-radius: 6px 0px 0px 6px;
   transform: translateY(50%, -50%);
 
   .icons {

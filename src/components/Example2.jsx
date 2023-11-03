@@ -30,32 +30,40 @@ padding: 2rem 0rem;
   }
   
   .cards {
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
+    justify-content:Center;
     list-style: none;
     margin: 0;
-  
+ 
+     background: transparent;
     padding: 0;
     border-radius: 20px;
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
   }
   
   .cards_item {
     display: flex;
-    background-color: #E8E6E7;
+    width: 20rem;
+    background-color: transparent;
+    overflow: hidden;
+   // background-color: #E8E6E7;
   }
   
   .card_image {
     display: flex;
     height: 200px;
+    background: transparent;
+
     box-shadow: 0 50px 100px 0 var(--violet);
   }
   
   .card_image img {
     display: block;
     width: 100%;
+    background: transparent;
+
     height: auto;
     object-fit: cover;
   }
@@ -65,7 +73,8 @@ padding: 2rem 0rem;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    background-color: #E8E6E7;
+    color: #E7E7E7;
+    background-color: rgb(0,0,0,0.2);
     border-radius: 5px 25px 5px 50px;
     transition: transform 0.1s linear, box-shadow 0.2s;
   }
@@ -84,6 +93,7 @@ padding: 2rem 0rem;
   .card_content {
     padding: 0.5rem 1rem 1rem;
     color: var(--white);
+    
   }
   
   .card_title {
@@ -261,7 +271,7 @@ const Example2 = () => {
   <ul class="cards">
     <li class="cards_item">
       <div class="card" tabindex="0">
-        <div class="card_image"><img src="https://s3-eu-west-1.amazonaws.com/alt-cdn/chrysos/images/blog/221/large/top-ten-tips-for-celebrating-your-achievements-5c17ae08166ef.jpg" alt="mixed vegetable salad in a mason jar. " /></div>
+        {/* <div class="card_image"><img src="https://s3-eu-west-1.amazonaws.com/alt-cdn/chrysos/images/blog/221/large/top-ten-tips-for-celebrating-your-achievements-5c17ae08166ef.jpg" alt="mixed vegetable salad in a mason jar. " /></div> */}
         <div class="card_content">
         
           <div class="card_text">
@@ -275,7 +285,7 @@ const Example2 = () => {
 
     <li class="cards_item">
       <div class="card" tabindex="0">
-        <div class="card_image"><img src="https://www.lubigelindia.com/files/catalog/About/why-choose-us.jpg" alt="a Reuben sandwich on wax paper. " /></div>
+        {/* <div class="card_image"><img src="https://www.lubigelindia.com/files/catalog/About/why-choose-us.jpg" alt="a Reuben sandwich on wax paper. " /></div> */}
         <div class="card_content">
        
           <div class="card_text">
@@ -304,7 +314,7 @@ With over a decade of experience, a loyal customer base of 25,500 individuals, a
     </li>
     <li class="cards_item">
       <div class="card" tabindex="0">
-        <div class="card_image"><img src="https://www.indiafilings.com/learn/wp-content/uploads/2023/07/A-Comprehensive-Guide-to-Startup-India-Registration.jpg" alt="A side view of a plate of figs and berries. " /></div>
+        {/* <div class="card_image"><img src="https://www.indiafilings.com/learn/wp-content/uploads/2023/07/A-Comprehensive-Guide-to-Startup-India-Registration.jpg" alt="A side view of a plate of figs and berries. " /></div> */}
         <div class="card_content">
         
           <div class="card_text">

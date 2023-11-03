@@ -14,7 +14,7 @@ const About = () => {
      {/* <Example3 /> */}
     
       <Example2 />
-      <p className='core_values'>Core Values</p>
+     
       <Example />
       <Organizations />
     </div>

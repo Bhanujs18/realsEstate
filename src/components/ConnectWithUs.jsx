@@ -38,13 +38,13 @@ const Wrapper = styled.section`
     margin: 0;
   }
   .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: Center;
+    flex-wrap: wrap;
     gap: 1rem;
     .box {
       display: flex;
       justify-content: center;
-
       font-size: 1rem;
       font-weight: 600;
       background-color: #E7E7E7 ;
@@ -70,27 +70,14 @@ const Wrapper = styled.section`
     }
   }
 
-  @media (max-width: 984px) {
-    .container {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
   @media (max-width: 672px) {
     .connectwithus {
       font-size: 1.5rem;
-    }
-    .container {
-      grid-template-columns: repeat(2, 1fr);
-      padding: 1rem;
     }
   }
   @media (max-width: 450px) {
     .connectwithus {
       font-size: 1.5rem;
-    }
-    .container {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 1rem;
     }
   }
 `;
@@ -121,12 +108,12 @@ const close = () => setShowform(false);
           <div
             className="box"
             style={{
-              backgroundColor: "#E7E7E7",
-              border: "2px green solid",
-              color: "green",
+              background:"transparent",
+              border: "2px #E7E7E7 solid",
+              color: "#E7E7E7",
             }}
           >
-            <BsWhatsapp className="icons" style={{ color: "green" }} />
+            <BsWhatsapp className="icons" style={{ color: "#E7E7E7" }} />
 
             <p>Whatsapp</p>
           </div>
@@ -137,13 +124,13 @@ const close = () => setShowform(false);
           <div
             className="box"
             style={{
-              backgroundColor: "#E7E7E7",
-              border: "2px #2091EB solid",
-              color: "#2091EB",
+              background:"transparent",
+              border: "2px #E7E7E7 solid",
+              color: "#E7E7E7",
             }}
           >
            
-            <BiPhoneCall className="icons" style={{ color: "#2091EB" }} />
+            <BiPhoneCall className="icons" style={{ color: "#E7E7E7"}} />
 
             <p>Call Us</p>
             
@@ -154,13 +141,13 @@ const close = () => setShowform(false);
           <div
             className="box"
             style={{
-              backgroundColor: "#E7E7E7",
-              border: "2px #E34033 solid",
-              color: "#E34033",
+              background:"transparent",
+              border: "2px #E7E7E7 solid",
+              color: "#E7E7E7",
               textDecoration:'none'
             }}
           >
-            <BiLogoGmail onClick={()=>setShowform(true)} className="icons" style={{ color: "#E34033" ,textDecoration:'none'}} />
+            <BiLogoGmail onClick={()=>setShowform(true)} className="icons" style={{ color: "#E7E7E7" ,textDecoration:'none'}} />
 
             <p onClick={()=>setShowform(true)}>Book A Site Visit</p>
             {showform ? <Form close={close} /> : null}

@@ -46,27 +46,14 @@ const Wrapper = styled.section`
         color: #E7E7E7;
 <<<<<<< HEAD
         word-spacing: 6px;
-=======
-
+======
 >>>>>>> fd249770caa0109834ea6230694ed5fd0160e215
-        font-family: "Anton", Arial, sans-serif;
+    
         user-select: none;
         line-height: 1.7;
         padding: 1rem;
         font-size: 1rem;
         transition: all 0.25s ease-out;
-      }
-      .button {
-        text-decoration: none;
-        font-size: 1rem;
-        background-color: white;
-        border: 2px grey solid;
-        color: #20262f;
-        padding: 0.6rem 1.4rem;
-      }
-      .button:hover {
-        background-color: grey;
-        color: white;
       }
     }
   }
@@ -89,7 +76,7 @@ const Wrapper = styled.section`
           padding: 1rem;
           font-size: 1.1rem;
           line-height: 1.3;
-          font-weight: 600;
+          font-weight: 400;
         }
       }
     }
@@ -125,7 +112,7 @@ const Goal = () => {
           <div
             style={{ width: "100%", display: "flex", justifyContent: "center" }}
           >
-            <NavLink className="button" to='/about'>Read More</NavLink>
+            <NavLink className="button-28" to='/about'>Read More</NavLink>
           </div>
         </div>
       </div>

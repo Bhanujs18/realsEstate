@@ -4,8 +4,7 @@ import flats from '../data/Flats';
 import styled from 'styled-components';
 import SearchCategory from '../components/SearchCategory';
 import TrendingProperties from '../components/TrendingProperties';
-
-import Category from '../components/Category';
+import {MdLocationPin} from 'react-icons/md';
 
 
 const PropertySection = styled.div`
@@ -22,31 +21,21 @@ width:100%;
 `
 
 const Wrapper = styled.div`
-display:grid;
-grid-template-columns:repeat(3, 1fr);
+display: flex;
+justify-content: Center;
+flex-wrap: wrap;
 gap: 2rem;
 padding: 2rem 0rem;
 margin:0;
 
-@media(max-width: 1250px){
-    grid-template-columns:repeat(3, 1fr);
-    }
-
-@media(max-width: 1050px){
-grid-template-columns:repeat(2, 1fr);
-}
-
-@media(max-width: 752px){
-    grid-template-columns:repeat(1, 1fr);
-    }
 `
 
 const Conatiner = styled.div`
 display: block;
 width:18rem;
-background-color: white;
+background-color: #E8E6E7;
 border-radius: 9px;
-border: 1px white solid;
+// border: 2px #E8E6E7 solid;
 box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 overflow:hidden;
 color: black;
@@ -65,18 +54,23 @@ padding: 0rem 1rem 1rem 1rem;
 `
 
 const Price = styled.p`
+width: 50%;
 `
-const Rating = styled.p`
-`
+
 const Location = styled.p`
 background-color: #20262F;
 padding: 0.3rem 0.8rem;
 border-radius: 3px;
-font-size: 0.8rem;
+display: flex;
+
+font-size: 0.7rem;
+height: max-content;
 color: white;
 `
 const Desc = styled.p`
 margin:0px;
+font-style: italic;
+font-size: 0.8rem;
 `
 
 const Properties = () => {
@@ -84,22 +78,22 @@ const Properties = () => {
     const {place} = useParams();
     const proptery = (place==="all") ? flats: flats.filter((cur)=>cur.place===place);
 
-    
+   
   return (
    
     <div style={{margin:"0px" , padding:'0px'}}>
 
        
 
-         <Category />
+      
 
-   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0' , color:'white'}} className='properties'>{place.toLocaleUpperCase()} PROPERTIES</p>
+   <p style={{padding:'2rem 0rem' , textAlign:'center' , fontWeight:"700" , margin:'0' , color:'white' , backgroundColor:"#010203"}} className='properties'>{place.toLocaleUpperCase()} PROPERTIES</p>
    <SearchCategory />
     <PropertySection>
     <Wrapper>
         {proptery.map((cur,index)=>{
             return (
-                <Conatiner>
+                <Conatiner key={index}>
                     <NavLink to={`/property-details/${cur.id}`}>
                     <IMageSection>
                           <IMage style={{position:"relative"}} src={cur.img} />
@@ -108,18 +102,20 @@ const Properties = () => {
                     </NavLink>
                     <Content>
                     <div style={{display:'flex' , justifyContent:'space-between' , margin:"0px" , padding:'0px'}}>
-                    <Price>{cur.name}</Price>
-                    <Location>{cur.Location}</Location>
+                    <Price style={{fontWeight:'600'}}>{cur.name}</Price>
+                    <Location><MdLocationPin />{cur.Location}</Location>
                     </div>
-                    <div style={{display:'flex' , justifyContent:'space-between' , margin:"0px"}}>
-                    <Price>*Rs {cur.price}/-</Price>
-                    <Rating>{cur.rating}⭐</Rating>
+                    <div style={{display:'flex', fontWeight:'600' , fontSize:'0.9rem' , justifyContent:'space-between' , margin:"0" , padding:'0'}}>
+                    <div>Price - {cur.price}/-</div>
+                    <div>{cur.rating}⭐</div>
                     </div>
-                    <Desc>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ratione dignissimos cumque excepturi id iure consequuntur vel </Desc>
+                    <div style={{fontSize:'0.9rem' , fontWeight:'600'}}>{cur.ProjectSize}</div>
+                    
+                    <Desc><br />{cur.about.substring(0,110)}......</Desc>
                     
                     </Content>
 
-                    <div style={{textDecoration:'none' , width:'100%' , textAlign:'center' , backgroundColor:'black' , padding:"0.3rem 0rem"}}><NavLink to="tel:+91-9991998060" style={{color:'white' , textDecoration:'none'}}>BOOK NOW</NavLink></div>
+                    {/* <div style={{textDecoration:'none' , width:'100%' , textAlign:'center' , backgroundColor:'black' , padding:"0.3rem 0rem"}}><NavLink to="tel:+91-9991998060" style={{color:'white' , textDecoration:'none'}}>BOOK NOW</NavLink></div> */}
 
 
                  

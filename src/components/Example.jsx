@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.section`
-
+background-image: url('https://res.cloudinary.com/dyqynjew8/image/upload/v1698562731/Screenshot_2023-10-29_121545_w0wpv0.png');
+background-size:cover;
+padding: 0px 0px 1rem 0px;
 .attribution { 
     font-size: 11px; text-align: center; 
 }
@@ -45,11 +47,11 @@ h1:last-of-type {
 }
 
 .box {
-    border-radius: 5px;
+    border-radius: 27px;
     box-shadow: 0px 30px 40px -20px var(--grayishBlue);
     padding: 30px;
     margin: 20px;  
-    background-color: white;
+    background-color: rgb(255,255,255,0.8);
 }
 
 img {
@@ -85,6 +87,10 @@ img {
 h2 {
     color: var(--varyDarkBlue);
     font-weight: var(--weight3);
+    font-weight: 600;
+}
+p{
+    font-style: italic;
 }
 
 
@@ -118,31 +124,42 @@ h2 {
 const Example = () => {
   return (
     <Wrapper>
-        
+         <p className='core_values' style={{fontStyle:'normal'}}>Core Values</p>
+
+
+
   <div class="row1-container">
-    <div class="box box-down cyan" style={{backgroundColor:'#B5B5B5'}}>
+    <div className="box box-down cyan" style={{backgroundColor: "RGB(1,2,3,0.5)" , color:'rgb(255,255,255,0.8)'}}>
       <h2>Reliability</h2>
       <p>At Elevate ProEx, reliability is at the heart of our ethos. We prioritize transparency and consistency in all our business practices.
-</p>
+     </p>
       <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="" />
     </div>
 
-    <div class="box red" style={{backgroundColor:'#D66464'}}>
+
+
+    <div className="box" style={{backgroundColor: "RGB(1,2,3,0.5)" , color:'rgb(255,255,255,0.8)'}}>
       <h2>Integrity</h2>
       <p>We believe that integrity is the foundation of achievement. It's the unwavering principle that guides us in all our endeavors.
-</p>
+     </p>
       <img src="https://assets.codepen.io/2301174/icon-team-builder.svg" alt="" />
     </div>
 
-    <div class="box box-down blue" style={{backgroundColor:'#B6CC57'}}>
+
+
+    <div class="box box-down" style={{backgroundColor: "RGB(1,2,3,0.5)" , color:'rgb(255,255,255,0.8)'}}>
       <h2>Sustainability</h2>
       <p>Elevate ProEx is committed to sustainable growth, not just for our company but also for our customers and colleagues. We aim for long-term success that benefits everyone.
-</p>
+      </p>
       <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="" />
     </div>
+    
   </div>
+
+
+
   <div class="row2-container">
-    <div class="box orange" style={{backgroundColor:'#30BCB3'}}>
+    <div class="box" style={{backgroundColor: "rgb(1,2,3,0.5)" , color:'rgb(255,255,255,0.8)'}}>
       <h2>Ethics</h2>
       <p>Our pursuit of exceptional profits is always coupled with a commitment to ethical business practices. We ensure that our customers reap the rewards of our services in a fair and just manner.</p>
       <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="" />

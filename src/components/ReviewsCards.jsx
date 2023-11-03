@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.section`
   color: white;
-  background-color: #262626;
+  background-color: #010203;
 
   border: 2px #20262f solid;
   background-size: cover;
